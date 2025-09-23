@@ -1,0 +1,42 @@
+# Ignore service account credentials and temporary files
+credentials.json
+credentials_from_env.json
+*.pem
+*.key
+
+# Ignore generated artifacts and logs
+kaspi_upload_result.json
+test.xml
+docs/kaspi.xml
+
+# Byte-compiled / cache
+__pycache__/
+.pytest_cache/# Конфиденциальные данные
+credentials.json
+
+# Тестовые файлы
+test_*.py
+test.*
+
+# Файлы Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Логи и временные файлы
+*.log
+*.err
+*.xml
+
+# Виртуальное окружение
+venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
