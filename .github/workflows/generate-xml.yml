@@ -28,6 +28,7 @@ jobs:
           MS_LOGIN: ${{ secrets.MS_LOGIN }}
           MS_PASSWORD: ${{ secrets.MS_PASSWORD }}
           ATTRIBUTE_ID: ${{ secrets.ATTRIBUTE_ID }}
+          PRICE_ATTRIBUTE_ID: ${{ secrets.PRICE_ATTRIBUTE_ID }}
           COMPANY: ${{ secrets.COMPANY }}
           MERCHANT_ID: ${{ secrets.MERCHANT_ID }}
         run: |

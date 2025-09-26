@@ -1,0 +1,19 @@
+# Переменные окружения для работы с API МойСклад
+# Получите эти значения из вашего аккаунта МойСклад
+
+# Логин и пароль для API МойСклад
+MS_LOGIN=your_login_here
+MS_PASSWORD=your_password_here
+
+# UUID атрибута чекбокса "Выгружать на Каспи?"
+ATTRIBUTE_ID=14858c5a-ccb7-11ef-0a80-08a200511bcd
+
+# UUID атрибута для цены "Каспи" (найдите в вашем МойСклад)
+PRICE_ATTRIBUTE_ID=your_price_attribute_id_here
+
+# Информация о компании
+COMPANY=ИП ВОЗРОЖДЕНИЕ
+MERCHANT_ID=30286450
+
+# Название файла XML
+XML_FILE=kaspi.xml

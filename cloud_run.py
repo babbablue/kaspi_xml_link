@@ -3,7 +3,6 @@ import json
 import base64
 import asyncio
 import hashlib
-from google.oauth2 import service_account
 """Generate kaspi.xml and copy to docs/ for GitHub Pages.
 
 This script intentionally does not use Google Drive. Use GitHub Actions to

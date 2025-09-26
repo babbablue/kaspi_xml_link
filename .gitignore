@@ -7,7 +7,6 @@ credentials_from_env.json
 # Ignore generated artifacts and logs
 kaspi_upload_result.json
 test.xml
-docs/kaspi.xml
 
 # Byte-compiled / cache
 __pycache__/
@@ -26,12 +25,14 @@ __pycache__/
 # Логи и временные файлы
 *.log
 *.err
-*.xml
 
 # Виртуальное окружение
 venv/
 env/
-.env/
+.env
+.env.*
+.env
+.venv
 
 # IDE
 .vscode/
@@ -40,3 +41,5 @@ env/
 # Системные файлы
 .DS_Store
 Thumbs.db
+
+find_attributes.py
