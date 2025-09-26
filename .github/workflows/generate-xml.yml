@@ -28,16 +28,29 @@ jobs:
           MS_LOGIN: ${{ secrets.MS_LOGIN }}
           MS_PASSWORD: ${{ secrets.MS_PASSWORD }}
           ATTRIBUTE_ID: ${{ secrets.ATTRIBUTE_ID }}
+          STOCK_EXTERNAL_CODE: ${{ secrets.STOCK_EXTERNAL_CODE }}
           PRICE_ATTRIBUTE_ID: ${{ secrets.PRICE_ATTRIBUTE_ID }}
           COMPANY: ${{ secrets.COMPANY }}
           MERCHANT_ID: ${{ secrets.MERCHANT_ID }}
+          XML_FILE: ${{ secrets.XML_FILE }}
         run: |
           python cloud_run.py
 
-      - name: Commit and push docs/kaspi.xml
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/kaspi.xml || true
-          git commit -m "Update kaspi.xml [skip ci]" || true
-          git push || true
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs'
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
