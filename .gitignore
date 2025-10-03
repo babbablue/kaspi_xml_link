@@ -33,6 +33,7 @@ env/
 .env.*
 .env
 .venv
+*.xml
 
 # IDE
 .vscode/

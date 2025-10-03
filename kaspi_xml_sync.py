@@ -11,6 +11,7 @@ import logging
 import datetime
 import base64
 import json  # Добавляем импорт json для отладки
+from functools import wraps
 
 # Настройка логирования
 logging.basicConfig(filename='kaspi_xml_sync.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', encoding='utf-8')
@@ -38,7 +39,29 @@ control_queue = queue.Queue()
 # runtime status
 last_generated_time = None
 event_loop = None
+current_token = None # Добавляем глобальную переменную для хранения токена
 
+# Декоратор для повторных попыток
+def retry_async(retries=2, delay=15):
+    def decorator(func):
+        @wraps(func)
+        async def wrapper(*args, **kwargs):
+            for i in range(retries + 1):
+                try:
+                    result = await func(*args, **kwargs)
+                    if result is not None:
+                        return result
+                except Exception as e:
+                    logging.warning(f"Попытка {i + 1}/{retries + 1}: Функция {func.__name__} вызвала исключение: {e}")
+                if i < retries:
+                    logging.info(f"Повторная попытка через {delay} секунд...")
+                    await asyncio.sleep(delay)
+            logging.error(f"Функция {func.__name__} не выполнилась после {retries + 1} попыток.")
+            return None
+        return wrapper
+    return decorator
+
+@retry_async()
 async def get_access_token():
     if not LOGIN or not PASSWORD:
         logging.error('MS_LOGIN / MS_PASSWORD not set in environment')
@@ -58,6 +81,20 @@ async def get_access_token():
                 logging.error(f"Failed to obtain access token: {response.status} - {await response.text()}")
                 return None
 
+async def ensure_token_is_valid(force_refresh=False):
+    global current_token
+    if force_refresh or not current_token:
+        if force_refresh:
+            logging.info("Forcing token refresh.")
+        else:
+            logging.info("No current token, attempting to get a new one.")
+        current_token = await get_access_token()
+        if not current_token:
+            logging.error("Failed to obtain a valid access token.")
+            return False
+    return True
+
+@retry_async()
 async def get_store_href(token):
     url = f"https://api.moysklad.ru/api/remap/1.2/entity/store?filter=externalCode={STOCK_EXTERNAL_CODE}"
     headers = {"Authorization": f"Bearer {token}"}
@@ -77,17 +114,19 @@ async def get_store_href(token):
                 logging.error(f"Failed to fetch store: {response.status} - {await response.text()}")
                 return None
 
+# Удаляем декоратор retry_async отсюда
 async def get_stock_for_products(products):
     """Получаем остатки для списка товаров"""
     if not products:
+        logging.debug("get_stock_for_products: Product list is empty.")
         return {}
 
-    token = await get_access_token()
-    if not token:
+    if not await ensure_token_is_valid():
         return {}
 
-    store_href = await get_store_href(token)
+    store_href = await get_store_href(current_token)
     if not store_href:
+        logging.error("get_stock_for_products: Store href not found.")
         return {}
     store_id = store_href.split('/')[-1] # Извлекаем ID склада из href
 
@@ -95,45 +134,73 @@ async def get_stock_for_products(products):
     timeout = aiohttp.ClientTimeout(total=60)
     async with aiohttp.ClientSession(timeout=timeout) as session:
         url = "https://api.moysklad.ru/api/remap/1.2/report/stock/all"
-        headers = {"Authorization": f"Bearer {token}"}
+        headers = {"Authorization": f"Bearer {current_token}"}
         params = {
             "store.id": store_id, # Используем store.id для фильтрации
-            "limit": 1000,
+            "limit": 1000, # Увеличиваем лимит для уменьшения количества запросов
             "offset": 0
         }
 
+        all_stock_rows = []
+        retries_401 = 0
+        max_retries_401 = 3 # Увеличиваем количество повторных попыток для 401 ошибки
+
         while True:
+            logging.debug(f"Fetching stock page with offset {params['offset']}")
             try:
                 async with session.get(url, headers=headers, params=params) as response:
-                    if response.status == 200:
-                        data = await response.json()
-                        rows = data.get("rows", [])
-                        logging.info(f"Stock API returned {len(rows)} records for offset {params['offset']}")
-
-                        for row in rows:
-                            # В Расширенном отчете об остатках meta и quantity находятся в корне row
-                            meta = row.get("meta", {})
-                            if meta.get("type") == "product":
-                                product_href = meta["href"]
-                                product_id = product_href.split("/")[-1].split("?")[0] # Очищаем product_id от параметров запроса
-                                stock = row.get("quantity", 0)
-                                stock_data[product_id] = stock
-                                if len(stock_data) <= 10:  # Ограничиваем детальный вывод только для первых 10 товаров
-                                    logging.info(f"Product {product_id} - Stock from MoySklad: {stock}")
+                    if response.status == 401:
+                        logging.warning(f"Stock API returned 401 for offset {params['offset']}. Attempting to refresh token. Retries left: {max_retries_401 - retries_401}.")
+                        if retries_401 < max_retries_401:
+                            logging.info("Attempting to force token refresh...")
+                            success = await ensure_token_is_valid(force_refresh=True) # Принудительно запрашиваем новый токен
+                            if success:
+                                headers["Authorization"] = f"Bearer {current_token}"
+                                retries_401 += 1
+                                logging.info(f"Token refreshed, retrying request for offset {params['offset']}.")
+                                continue # Повторяем текущий запрос с новым токеном
                             else:
-                                logging.info(f"Skipping non-product assortment (type: {meta.get('type', 'None')}).")
-
-                        if len(rows) < params["limit"]:
-                            break
-                        params["offset"] += params["limit"]
-                    else:
+                                logging.error("Failed to refresh token after 401. Aborting stock data fetch.")
+                                return {}
+                        else:
+                            logging.error("Max token refresh retries reached after 401. Aborting stock data fetch.")
+                            return {}
+                    elif response.status != 200:
                         logging.error(f"Failed to get stock data: {response.status} - {await response.text()}")
-                        break
+                        return {}
+                    
+                    data = await response.json()
+
+                rows = data.get("rows", [])
+                all_stock_rows.extend(rows)
+                logging.info(f"Stock API returned {len(rows)} records for offset {params['offset']}. Total stock records fetched: {len(all_stock_rows)}")
+                
+                # Сбрасываем счетчик повторных попыток 401 после успешного запроса
+                retries_401 = 0
+
+                if len(rows) < params["limit"]:
+                    break # Достигнут конец данных
+                params["offset"] += params["limit"]
+            except asyncio.CancelledError:
+                raise
             except Exception as e:
                 logging.error(f"Exception getting stock data: {e}")
-                break
+                return {}
 
-    logging.info(f"Retrieved stock data for {len(stock_data)} products")
+    for row in all_stock_rows:
+        meta = row.get("meta", {})
+        if meta.get("type") == "product":
+            product_href = meta["href"]
+            product_id = product_href.split("/")[-1].split("?")[0] # Очищаем product_id от параметров запроса
+            stock = row.get("quantity", 0)
+            stock_data[product_id] = stock
+            if logging.getLogger().level == logging.DEBUG: # Логируем детально только в режиме DEBUG
+                if len(stock_data) <= 10 or product_id in [p.get("id") for p in products[:10]]: # Для первых 10 или если это один из первых 10 продуктов
+                    logging.debug(f"Product {product_id} - Stock from MoySklad: {stock}")
+        else:
+            logging.debug(f"Skipping non-product assortment (type: {meta.get('type', 'None')}).")
+
+    logging.info(f"Retrieved stock data for {len(stock_data)} unique products. Total raw stock records fetched: {len(all_stock_rows)}")
     return stock_data
 
 def has_kaspi_attribute(product):
@@ -161,6 +228,7 @@ def has_kaspi_attribute(product):
 
     return False
 
+@retry_async()
 async def fetch_products():
     token = await get_access_token()
     if not token:
@@ -183,10 +251,12 @@ async def fetch_products():
     products = []
     timeout = aiohttp.ClientTimeout(total=60)
     async with aiohttp.ClientSession(timeout=timeout) as session:
-        while url:
-            logging.info(f"Fetching page: {url}")
+        current_url = url # Инициализируем текущий URL
+        current_params = params # Инициализируем параметры для первого запроса
+        while current_url:
+            logging.info(f"Fetching page: {current_url}")
             try:
-                async with session.get(url, headers=headers, params=params) as response:
+                async with session.get(current_url, headers=headers, params=current_params) as response:
                     if response.status != 200:
                         logging.error(f"API error: {response.status} - {await response.text()}")
                         return []
@@ -200,12 +270,10 @@ async def fetch_products():
             rows = data.get("rows", [])
             logging.info(f"Fetched {len(rows)} products from current page.")
 
-            # Если фильтр сработал - добавляем все товары
             if "filter" in params:
                 products.extend(rows)
                 logging.info(f"Filter active, added {len(rows)} products")
             else:
-                # Fallback: локальная фильтрация
                 filtered = []
                 for p in rows:
                     if has_kaspi_attribute(p):
@@ -213,39 +281,54 @@ async def fetch_products():
                 products.extend(filtered)
                 logging.info(f"Local filtering, added {len(filtered)} products")
 
-            url = data.get("meta", {}).get("nextHref")
+            current_url = data.get("meta", {}).get("nextHref")
+            current_params = None # После первого запроса, используем nextHref напрямую, без params
     logging.info(f"Total fetched {len(products)} products")
     return products
 
 async def generate_xml(products):
     logging.info(f"Starting XML generation for {len(products)} products.")
+    if not products:
+        logging.warning("Невозможно сгенерировать XML: список продуктов пуст.")
+        return False # Возвращаем False, если нет продуктов для генерации
+
     root = ET.Element("kaspi_catalog", xmlns="kaspiShopping", date=datetime.datetime.now().strftime("%Y-%m-%d"))
-    # Добавляем недостающие атрибуты
     root.set("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
     root.set("xsi:schemaLocation", "http://kaspi.kz/kaspishopping.xsd")
 
-    # Используем переменные окружения напрямую
     company = os.getenv('COMPANY', 'ИП ВОЗРОЖДЕНИЕ')
     merchant_id = os.getenv('MERCHANT_ID', '30286450')
     ET.SubElement(root, "company").text = company
     ET.SubElement(root, "merchantid").text = merchant_id
     offers = ET.SubElement(root, "offers")
 
-    # Получаем остатки для всех товаров
     stock_data = {}
     if products:
         stock_data = await get_stock_for_products(products)
-        logging.info(f"Got stock data for {len(stock_data)} products")
+        logging.info(f"Получено данных об остатках для {len(stock_data)} продуктов")
+
+    products_in_xml = 0
+    products_with_zero_stock = 0
 
     for p in products:
+        product_id = p.get("id")
+        stock_count = stock_data.get(product_id, 0)
+        
+        # Убеждаемся что stock_count целое число
+        stock_count = int(stock_count)
+
+        if stock_count == 0:
+            products_with_zero_stock += 1
+            logging.debug(f"Продукт {p.get('name', 'Unknown')} (ID: {product_id}) имеет нулевой остаток, пропускаем.")
+            continue # Пропускаем товары с нулевым остатком
+
         offer = ET.SubElement(offers, "offer", sku=p.get("code", str(p["id"])))
         ET.SubElement(offer, "model").text = p.get("name", "Unknown")
         brand_name = p.get("brand", {}).get("name", "Без бренда") if p.get("brand") else "Без бренда"
         ET.SubElement(offer, "brand").text = brand_name
 
-        # Получаем цену из атрибута "Каспи"
         price = 0
-        price_attribute_id = os.getenv('PRICE_ATTRIBUTE_ID', 'fc15ca1c-d188-4088-87b1-44a749aece17')
+        price_attribute_id = os.getenv('PRICE_ATTRIBUTE_ID', 'fc15ca1c-d188-11ef-0a80-08a200511bcd')
         if price_attribute_id:
             attrs = p.get("attributes") or p.get("productAttributeValues") or []
             for a in attrs:
@@ -269,7 +352,6 @@ async def generate_xml(products):
                             price = 0
                     break
 
-        # Если цена не найдена в атрибуте, используем цену продажи
         if price == 0:
             sale_price = p.get("salePrices", [{}])[0].get("value", 0)
             if sale_price:
@@ -277,38 +359,47 @@ async def generate_xml(products):
             else:
                 price = 0
 
-        # Убеждаемся что цена целое число
         price = int(price)
-
-        # Получаем остатки из API
-        product_id = p.get("id")
-        stock_count = stock_data.get(product_id, 0)
-        logging.info(f"Product: {p.get('name', 'Unknown')}, ID: {product_id}, Price: {price}, Stock: {stock_count}")
 
         availabilities = ET.SubElement(offer, "availabilities")
         ET.SubElement(availabilities, "availability", available="yes", storeId="PP1", stockCount=str(int(stock_count)))
         ET.SubElement(offer, "price").text = str(price)
+        products_in_xml += 1
+
+    if products_in_xml == 0:
+        logging.warning("Не найдено товаров с ненулевым остатком для включения в XML.")
+        return False
+
     tree = ET.ElementTree(root)
 
-    # Используем переменную окружения для имени файла
     xml_file = os.getenv('XML_FILE', 'kaspi.xml')
-    # Создаем директорию docs, если она не существует
     docs_dir = "docs"
     if not os.path.exists(docs_dir):
         os.makedirs(docs_dir)
-    tree.write(os.path.join(docs_dir, xml_file), encoding="utf-8", xml_declaration=True)
+
+    # Только если есть товары для записи
+    full_xml_path = os.path.join(docs_dir, xml_file)
+    tree.write(full_xml_path, encoding="utf-8", xml_declaration=True)
     backup_file = f"kaspi_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.xml"
     tree.write(os.path.join(docs_dir, backup_file), encoding="utf-8", xml_declaration=True)
     global last_generated_time
     last_generated_time = datetime.datetime.now()
-    logging.info("XML generated")
+    logging.info(f"XML успешно сгенерирован в {full_xml_path}. Добавлено {products_in_xml} товаров. Пропущено {products_with_zero_stock} товаров с нулевым остатком.")
+    return True
 
 async def update_xml():
     logging.info('update_xml: started')
     products = await fetch_products()
-    logging.info(f'update_xml: fetched {len(products)} products')
-    await generate_xml(products)
-    logging.info('update_xml: finished')
+    logging.info(f'update_xml: fetched {len(products)} products from MoySklad.')
+    if not products:
+        logging.error("Не удалось получить товары из МойСклад. Пропускаем генерацию XML.")
+        return
+
+    xml_generated_successfully = await generate_xml(products)
+    if xml_generated_successfully:
+        logging.info('update_xml: finished successfully.')
+    else:
+        logging.warning('update_xml: XML не был сгенерирован или содержит 0 товаров. Оставляем старый XML.')
 
 @app.route("/xml")
 def serve_xml():
