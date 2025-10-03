@@ -328,7 +328,7 @@ async def generate_xml(products):
         ET.SubElement(offer, "brand").text = brand_name
 
         price = 0
-        price_attribute_id = os.getenv('PRICE_ATTRIBUTE_ID', 'fc15ca1c-d188-11ef-0a80-08a200511bcd')
+        price_attribute_id = os.getenv('PRICE_ATTRIBUTE_ID', 'fc15ca1c-d188-4088-87b1-44a749aece17') # Исправлено: верный UUID для Каспи
         if price_attribute_id:
             attrs = p.get("attributes") or p.get("productAttributeValues") or []
             for a in attrs:
