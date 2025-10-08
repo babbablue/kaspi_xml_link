@@ -35,6 +35,8 @@ env/
 .venv
 *.xml
 
+docs/
+
 # IDE
 .vscode/
 .idea/

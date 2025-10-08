@@ -116,7 +116,7 @@ async def get_store_href(token):
 
 # Удаляем декоратор retry_async отсюда
 async def get_stock_for_products(products):
-    """Получаем остатки для списка товаров"""
+    """Получаем остатки для списка товаров с учетом резервов"""
     if not products:
         logging.debug("get_stock_for_products: Product list is empty.")
         return {}
@@ -128,42 +128,39 @@ async def get_stock_for_products(products):
     if not store_href:
         logging.error("get_stock_for_products: Store href not found.")
         return {}
-    store_id = store_href.split('/')[-1] # Извлекаем ID склада из href
+    store_id = store_href.split('/')[-1]
 
     stock_data = {}
     timeout = aiohttp.ClientTimeout(total=60)
     async with aiohttp.ClientSession(timeout=timeout) as session:
+        # Используем report/stock/all для получения всех остатков
         url = "https://api.moysklad.ru/api/remap/1.2/report/stock/all"
         headers = {"Authorization": f"Bearer {current_token}"}
         params = {
-            "store.id": store_id, # Используем store.id для фильтрации
-            "limit": 1000, # Увеличиваем лимит для уменьшения количества запросов
+            "store.id": store_id,
+            "stockMode": "all",
+            "limit": 1000,
             "offset": 0
         }
 
         all_stock_rows = []
         retries_401 = 0
-        max_retries_401 = 3 # Увеличиваем количество повторных попыток для 401 ошибки
+        max_retries_401 = 3
 
         while True:
             logging.debug(f"Fetching stock page with offset {params['offset']}")
             try:
                 async with session.get(url, headers=headers, params=params) as response:
                     if response.status == 401:
-                        logging.warning(f"Stock API returned 401 for offset {params['offset']}. Attempting to refresh token. Retries left: {max_retries_401 - retries_401}.")
                         if retries_401 < max_retries_401:
-                            logging.info("Attempting to force token refresh...")
-                            success = await ensure_token_is_valid(force_refresh=True) # Принудительно запрашиваем новый токен
+                            success = await ensure_token_is_valid(force_refresh=True)
                             if success:
                                 headers["Authorization"] = f"Bearer {current_token}"
                                 retries_401 += 1
-                                logging.info(f"Token refreshed, retrying request for offset {params['offset']}.")
-                                continue # Повторяем текущий запрос с новым токеном
+                                continue
                             else:
-                                logging.error("Failed to refresh token after 401. Aborting stock data fetch.")
                                 return {}
                         else:
-                            logging.error("Max token refresh retries reached after 401. Aborting stock data fetch.")
                             return {}
                     elif response.status != 200:
                         logging.error(f"Failed to get stock data: {response.status} - {await response.text()}")
@@ -175,32 +172,31 @@ async def get_stock_for_products(products):
                 all_stock_rows.extend(rows)
                 logging.info(f"Stock API returned {len(rows)} records for offset {params['offset']}. Total stock records fetched: {len(all_stock_rows)}")
                 
-                # Сбрасываем счетчик повторных попыток 401 после успешного запроса
                 retries_401 = 0
 
                 if len(rows) < params["limit"]:
-                    break # Достигнут конец данных
+                    break
                 params["offset"] += params["limit"]
-            except asyncio.CancelledError:
-                raise
+
             except Exception as e:
                 logging.error(f"Exception getting stock data: {e}")
                 return {}
 
+    # Обработка полученных данных с учетом резервов
     for row in all_stock_rows:
         meta = row.get("meta", {})
         if meta.get("type") == "product":
-            product_href = meta["href"]
-            product_id = product_href.split("/")[-1].split("?")[0] # Очищаем product_id от параметров запроса
-            stock = row.get("quantity", 0)
-            stock_data[product_id] = stock
-            if logging.getLogger().level == logging.DEBUG: # Логируем детально только в режиме DEBUG
-                if len(stock_data) <= 10 or product_id in [p.get("id") for p in products[:10]]: # Для первых 10 или если это один из первых 10 продуктов
-                    logging.debug(f"Product {product_id} - Stock from MoySklad: {stock}")
-        else:
-            logging.debug(f"Skipping non-product assortment (type: {meta.get('type', 'None')}).")
+            product_id = meta["href"].split("/")[-1].split("?")[0]
+            stock = row.get("stock", 0)  # Общий остаток
+            reserve = row.get("reserve", 0)  # Резерв
+            available = max(0, stock - reserve)  # Доступный остаток
+            
+            stock_data[product_id] = available
+            
+            if logging.getLogger().level == logging.DEBUG:
+                logging.debug(f"Product {product_id} - Total stock: {stock}, Reserve: {reserve}, Available: {available}")
 
-    logging.info(f"Retrieved stock data for {len(stock_data)} unique products. Total raw stock records fetched: {len(all_stock_rows)}")
+    logging.info(f"Retrieved stock data for {len(stock_data)} unique products with reserves consideration")
     return stock_data
 
 def has_kaspi_attribute(product):
