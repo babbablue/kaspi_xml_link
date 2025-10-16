@@ -36,6 +36,7 @@ env/
 *.xml
 
 docs/
+docs
 
 # IDE
 .vscode/

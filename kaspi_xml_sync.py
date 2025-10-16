@@ -1,28 +1,29 @@
+# -*- coding: utf-8 -*-
+import os
+import logging
 import aiohttp
 import asyncio
-import xml.etree.ElementTree as ET
 from flask import Flask, send_file
 import schedule
 import queue
 import threading
 from flask import jsonify, request
 import time
-import logging
 import datetime
 import base64
-import json  # Добавляем импорт json для отладки
+import json
+import xml.etree.ElementTree as ET
 from functools import wraps
 
 # Настройка логирования
 logging.basicConfig(filename='kaspi_xml_sync.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', encoding='utf-8')
 
 from dotenv import load_dotenv
-import os
 
 # Конфигурация через переменные окружения (поддерживается .env)
 load_dotenv()
 
-# LOGIN и PASSWORD должны храниться в окружении (не в коде). Примеры: LOGIN, PASSWORD
+# LOGIN и PASSWORD должны храниться в окружении (не в коде)
 LOGIN = os.getenv('MS_LOGIN') or os.getenv('LOGIN')
 PASSWORD = os.getenv('MS_PASSWORD') or os.getenv('PASSWORD')
 
@@ -30,6 +31,8 @@ PASSWORD = os.getenv('MS_PASSWORD') or os.getenv('PASSWORD')
 ATTRIBUTE_ID = os.getenv('ATTRIBUTE_ID', '14858c5a-ccb7-11ef-0a80-08a200511bcd')
 # Внешний код склада для остатков
 STOCK_EXTERNAL_CODE = os.getenv('STOCK_ID', 'V2M50lgsggOhAsUxFXeMK3')
+# ID типа цены "Каспи"
+KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', '9fd68e0e-ca75-11ef-0a80-0c7900359c7d')
 
 app = Flask(__name__)
 
@@ -39,9 +42,8 @@ control_queue = queue.Queue()
 # runtime status
 last_generated_time = None
 event_loop = None
-current_token = None # Добавляем глобальную переменную для хранения токена
+current_token = None
 
-# Декоратор для повторных попыток
 def retry_async(retries=2, delay=15):
     def decorator(func):
         @wraps(func)
@@ -114,7 +116,6 @@ async def get_store_href(token):
                 logging.error(f"Failed to fetch store: {response.status} - {await response.text()}")
                 return None
 
-# Удаляем декоратор retry_async отсюда
 async def get_stock_for_products(products):
     """Получаем остатки для списка товаров с учетом резервов"""
     if not products:
@@ -133,7 +134,6 @@ async def get_stock_for_products(products):
     stock_data = {}
     timeout = aiohttp.ClientTimeout(total=60)
     async with aiohttp.ClientSession(timeout=timeout) as session:
-        # Используем report/stock/all для получения всех остатков
         url = "https://api.moysklad.ru/api/remap/1.2/report/stock/all"
         headers = {"Authorization": f"Bearer {current_token}"}
         params = {
@@ -167,16 +167,13 @@ async def get_stock_for_products(products):
                         return {}
                     
                     data = await response.json()
-
-                rows = data.get("rows", [])
-                all_stock_rows.extend(rows)
-                logging.info(f"Stock API returned {len(rows)} records for offset {params['offset']}. Total stock records fetched: {len(all_stock_rows)}")
-                
-                retries_401 = 0
-
-                if len(rows) < params["limit"]:
-                    break
-                params["offset"] += params["limit"]
+                    rows = data.get("rows", [])
+                    all_stock_rows.extend(rows)
+                    logging.debug(f"Stock API returned {len(rows)} records for offset {params['offset']}")
+                    
+                    if len(rows) < params["limit"]:
+                        break
+                    params["offset"] += params["limit"]
 
             except Exception as e:
                 logging.error(f"Exception getting stock data: {e}")
@@ -190,38 +187,26 @@ async def get_stock_for_products(products):
             stock = row.get("stock", 0)  # Общий остаток
             reserve = row.get("reserve", 0)  # Резерв
             available = max(0, stock - reserve)  # Доступный остаток
-            
             stock_data[product_id] = available
             
             if logging.getLogger().level == logging.DEBUG:
-                logging.debug(f"Product {product_id} - Total stock: {stock}, Reserve: {reserve}, Available: {available}")
+                logging.debug(f"Product {product_id} - Stock: {stock}, Reserve: {reserve}, Available: {available}")
 
-    logging.info(f"Retrieved stock data for {len(stock_data)} unique products with reserves consideration")
+    logging.info(f"Retrieved stock data for {len(stock_data)} unique products")
     return stock_data
 
 def has_kaspi_attribute(product):
     """Проверяет, отмечен ли чекбокс 'Выгружать на Каспи?' у товара"""
-    attrs = product.get("attributes") or product.get("productAttributeValues") or []
-
-    for a in attrs:
-        # Пытаемся определить UUID атрибута в meta.href или id
-        meta = a.get("meta", {}) or {}
+    attrs = product.get("attributes") or []
+    for attr in attrs:
+        meta = attr.get("meta", {})
         href = meta.get("href", "")
-        # Некоторые структуры хранят ссылку на атрибут в поле 'attribute'
-        if not href and a.get("attribute"):
-            href = a["attribute"].get("meta", {}).get("href", "")
-
-        if ATTRIBUTE_ID in href or a.get("id") == ATTRIBUTE_ID:
-            # проверяем значение - может быть булево или словарь
-            val = a.get("value")
-            if isinstance(val, bool) and val:
-                return True
-            if isinstance(val, dict) and val.get("value") in [True, "true", "yes", 1, "1"]:
-                return True
-            # Если значение - это словарь с полем value, проверяем его
-            if isinstance(val, dict) and val.get("value") is True:
-                return True
-
+        if ATTRIBUTE_ID in href or attr.get("id") == ATTRIBUTE_ID:
+            val = attr.get("value")
+            if isinstance(val, bool):
+                return val
+            elif isinstance(val, dict) and "value" in val:
+                return val["value"] is True
     return False
 
 @retry_async()
@@ -234,21 +219,20 @@ async def fetch_products():
     headers = {"Authorization": f"Bearer {token}"}
     params = {
         "limit": 100,
-        "expand": "brand"
+        "expand": "attributes,salePrices"
     }
 
-    # ВКЛЮЧАЕМ ФИЛЬТР ПО АТРИБУТУ (как показало тестирование)
-    if ATTRIBUTE_ID and not ATTRIBUTE_ID.startswith("your_"):
+    # Включаем фильтр по атрибуту
+    if ATTRIBUTE_ID:
         filter_url = f"https://api.moysklad.ru/api/remap/1.2/entity/product/metadata/attributes/{ATTRIBUTE_ID}=true"
         params["filter"] = filter_url
         logging.info(f"Using API filter for attribute: {ATTRIBUTE_ID}")
-        logging.info(f"Using filter URL: {filter_url}")
 
     products = []
     timeout = aiohttp.ClientTimeout(total=60)
     async with aiohttp.ClientSession(timeout=timeout) as session:
-        current_url = url # Инициализируем текущий URL
-        current_params = params # Инициализируем параметры для первого запроса
+        current_url = url
+        current_params = params
         while current_url:
             logging.info(f"Fetching page: {current_url}")
             try:
@@ -257,8 +241,6 @@ async def fetch_products():
                         logging.error(f"API error: {response.status} - {await response.text()}")
                         return []
                     data = await response.json()
-            except asyncio.CancelledError:
-                raise
             except Exception as e:
                 logging.error(f"Exception while fetching products: {e}")
                 return []
@@ -270,15 +252,12 @@ async def fetch_products():
                 products.extend(rows)
                 logging.info(f"Filter active, added {len(rows)} products")
             else:
-                filtered = []
-                for p in rows:
-                    if has_kaspi_attribute(p):
-                        filtered.append(p)
+                filtered = [p for p in rows if has_kaspi_attribute(p)]
                 products.extend(filtered)
                 logging.info(f"Local filtering, added {len(filtered)} products")
 
             current_url = data.get("meta", {}).get("nextHref")
-            current_params = None # После первого запроса, используем nextHref напрямую, без params
+            current_params = None
     logging.info(f"Total fetched {len(products)} products")
     return products
 
@@ -286,7 +265,7 @@ async def generate_xml(products):
     logging.info(f"Starting XML generation for {len(products)} products.")
     if not products:
         logging.warning("Невозможно сгенерировать XML: список продуктов пуст.")
-        return False # Возвращаем False, если нет продуктов для генерации
+        return False
 
     root = ET.Element("kaspi_catalog", xmlns="kaspiShopping", date=datetime.datetime.now().strftime("%Y-%m-%d"))
     root.set("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
@@ -316,49 +295,37 @@ async def generate_xml(products):
         if stock_count == 0:
             products_with_zero_stock += 1
             logging.debug(f"Продукт {p.get('name', 'Unknown')} (ID: {product_id}) имеет нулевой остаток, пропускаем.")
-            continue # Пропускаем товары с нулевым остатком
+            continue
 
         offer = ET.SubElement(offers, "offer", sku=p.get("code", str(p["id"])))
         ET.SubElement(offer, "model").text = p.get("name", "Unknown")
         brand_name = p.get("brand", {}).get("name", "Без бренда") if p.get("brand") else "Без бренда"
         ET.SubElement(offer, "brand").text = brand_name
 
+        # Получаем цену Каспи из типов цен
         price = 0
-        price_attribute_id = os.getenv('PRICE_ATTRIBUTE_ID', 'fc15ca1c-d188-4088-87b1-44a749aece17') # Исправлено: верный UUID для Каспи
-        if price_attribute_id:
-            attrs = p.get("attributes") or p.get("productAttributeValues") or []
-            for a in attrs:
-                meta = a.get("meta", {}) or {}
-                href = meta.get("href", "")
-                if not href and a.get("attribute"):
-                    href = a["attribute"].get("meta", {}).get("href", "")
-                if price_attribute_id in href or a.get("id") == price_attribute_id:
-                    val = a.get("value")
-                    if isinstance(val, (int, float)):
-                        price = int(val)
-                    elif isinstance(val, str):
-                        try:
-                            price = int(float(val))
-                        except ValueError:
-                            price = 0
-                    elif isinstance(val, dict) and "value" in val:
-                        try:
-                            price = int(float(val["value"]))
-                        except (ValueError, TypeError):
-                            price = 0
-                    break
-
+        sale_prices = p.get('salePrices', [])
+        for price_info in sale_prices:
+            price_type = price_info.get('priceType', {})
+            if price_type.get('id') == KASPI_PRICE_TYPE_ID:
+                price = int(price_info.get('value', 0) / 100)  # Переводим копейки в рубли
+                logging.debug(f"Найдена цена Каспи для товара {p.get('name')}: {price}")
+                break
+        
+        # Если цена Каспи не найдена, берем первую доступную цену
         if price == 0:
-            sale_price = p.get("salePrices", [{}])[0].get("value", 0)
-            if sale_price:
-                price = sale_price // 100
-            else:
-                price = 0
-
-        price = int(price)
+            for price_info in sale_prices:
+                value = price_info.get('value', 0)
+                if value > 0:
+                    price = int(value / 100)
+                    logging.debug(f"Использована стандартная цена для товара {p.get('name')}: {price}")
+                    break
+        
+        if price == 0:
+            logging.warning(f"Не найдено цен для товара {p.get('name')} (артикул: {p.get('code')})")
 
         availabilities = ET.SubElement(offer, "availabilities")
-        ET.SubElement(availabilities, "availability", available="yes", storeId="PP1", stockCount=str(int(stock_count)))
+        ET.SubElement(availabilities, "availability", available="yes", storeId="PP1", stockCount=str(stock_count))
         ET.SubElement(offer, "price").text = str(price)
         products_in_xml += 1
 
@@ -373,11 +340,11 @@ async def generate_xml(products):
     if not os.path.exists(docs_dir):
         os.makedirs(docs_dir)
 
-    # Только если есть товары для записи
     full_xml_path = os.path.join(docs_dir, xml_file)
     tree.write(full_xml_path, encoding="utf-8", xml_declaration=True)
     backup_file = f"kaspi_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.xml"
     tree.write(os.path.join(docs_dir, backup_file), encoding="utf-8", xml_declaration=True)
+    
     global last_generated_time
     last_generated_time = datetime.datetime.now()
     logging.info(f"XML успешно сгенерирован в {full_xml_path}. Добавлено {products_in_xml} товаров. Пропущено {products_with_zero_stock} товаров с нулевым остатком.")
@@ -406,7 +373,6 @@ def serve_xml():
 def control_generate():
     """Trigger generation now (schedules coroutine in event loop)."""
     try:
-        # Put a command into the control queue to be handled by main loop
         control_queue.put_nowait({'cmd': 'generate_now'})
         return jsonify({'status': 'ok', 'message': 'generation scheduled'})
     except Exception as e:
@@ -437,14 +403,13 @@ def control_stop():
     return jsonify({'status': 'ok', 'message': 'stop requested'})
 
 def run_flask():
-    # Disable reloader to avoid double-start when run as subprocess
     app.run(host="0.0.0.0", port=5000, debug=False, use_reloader=False)
 
 async def main():
     global event_loop
     event_loop = asyncio.get_running_loop()
 
-    # Start Flask server immediately so GUI/control endpoints are available
+    # Start Flask server
     flask_thread = threading.Thread(target=run_flask)
     flask_thread.daemon = True
     flask_thread.start()
@@ -453,13 +418,12 @@ async def main():
     schedule.clear()
     schedule.every().hour.do(lambda: asyncio.create_task(update_xml()))
 
-    # kick off first generation in background so server is responsive
+    # kick off first generation in background
     asyncio.create_task(update_xml())
 
     running = True
     try:
         while running:
-            # process control commands from GUI
             try:
                 cmd = control_queue.get_nowait()
             except queue.Empty:
