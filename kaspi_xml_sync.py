@@ -125,6 +125,9 @@ async def get_stock_for_products(products):
     if not await ensure_token_is_valid():
         return {}
 
+    start_ts = time.time()
+    logging.info("get_stock_for_products: начинаю запрос отчета по складу...")
+
     store_href = await get_store_href(current_token)
     if not store_href:
         logging.error("get_stock_for_products: Store href not found.")
@@ -179,20 +182,22 @@ async def get_stock_for_products(products):
                 logging.error(f"Exception getting stock data: {e}")
                 return {}
 
-    # Обработка полученных данных с учетом резервов
+    # Обработка полученных данных с учетом резервов (только товары product)
     for row in all_stock_rows:
         meta = row.get("meta", {})
-        if meta.get("type") == "product":
-            product_id = meta["href"].split("/")[-1].split("?")[0]
+        entity_type = meta.get("type")
+        if entity_type == "product":
+            entity_id = meta["href"].split("/")[-1].split("?")[0]
             stock = row.get("stock", 0)  # Общий остаток
             reserve = row.get("reserve", 0)  # Резерв
             available = max(0, stock - reserve)  # Доступный остаток
-            stock_data[product_id] = available
+            stock_data[entity_id] = available
             
             if logging.getLogger().level == logging.DEBUG:
-                logging.debug(f"Product {product_id} - Stock: {stock}, Reserve: {reserve}, Available: {available}")
+                logging.debug(f"Product {entity_id} - Stock: {stock}, Reserve: {reserve}, Available: {available}")
 
-    logging.info(f"Retrieved stock data for {len(stock_data)} unique products")
+    elapsed = time.time() - start_ts
+    logging.info(f"Retrieved stock data for {len(stock_data)} unique products in {elapsed:.1f} seconds")
     return stock_data
 
 def has_kaspi_attribute(product):
@@ -209,57 +214,71 @@ def has_kaspi_attribute(product):
                 return val["value"] is True
     return False
 
+async def fetch_entity_items(token, entity_type, use_attribute_filter=True):
+    """Базовый загрузчик сущностей (товары/комплекты) с фильтрацией по атрибуту."""
+    if not token:
+        logging.error(f"No token, cannot fetch {entity_type}")
+        return []
+
+    base_url = f"https://api.moysklad.ru/api/remap/1.2/entity/{entity_type}"
+    headers = {"Authorization": f"Bearer {token}"}
+    params = {
+        "limit": 100,
+        "expand": "attributes,salePrices,components,components.assortment"
+    }
+
+    filter_active = False
+    if use_attribute_filter and ATTRIBUTE_ID:
+        params["filter"] = f"{base_url}/metadata/attributes/{ATTRIBUTE_ID}=true"
+        filter_active = True
+        logging.info(f"[{entity_type}] Using API filter for attribute: {ATTRIBUTE_ID}")
+
+    items = []
+    timeout = aiohttp.ClientTimeout(total=60)
+    async with aiohttp.ClientSession(timeout=timeout) as session:
+        current_url = base_url
+        current_params = params
+        while current_url:
+            logging.info(f"[{entity_type}] Fetching page: {current_url}")
+            try:
+                async with session.get(current_url, headers=headers, params=current_params) as response:
+                    if response.status != 200:
+                        logging.error(f"[{entity_type}] API error: {response.status} - {await response.text()}")
+                        return []
+                    data = await response.json()
+            except Exception as e:
+                logging.error(f"[{entity_type}] Exception while fetching entities: {e}")
+                return []
+
+            rows = data.get("rows", [])
+            logging.info(f"[{entity_type}] Received {len(rows)} entities from current page.")
+
+            if filter_active:
+                items.extend(rows)
+            else:
+                filtered_rows = [p for p in rows if has_kaspi_attribute(p)]
+                items.extend(filtered_rows)
+                logging.info(f"[{entity_type}] Local filtering kept {len(filtered_rows)} entities.")
+
+            current_url = data.get("meta", {}).get("nextHref")
+            current_params = None
+
+    logging.info(f"[{entity_type}] Total fetched {len(items)} entities after filtering.")
+    return items
+
 @retry_async()
 async def fetch_products():
     token = await get_access_token()
     if not token:
-        logging.error("No token, cannot fetch products")
+        logging.error("No token, cannot fetch products and bundles")
         return []
-    url = "https://api.moysklad.ru/api/remap/1.2/entity/product"
-    headers = {"Authorization": f"Bearer {token}"}
-    params = {
-        "limit": 100,
-        "expand": "attributes,salePrices"
-    }
 
-    # Включаем фильтр по атрибуту
-    if ATTRIBUTE_ID:
-        filter_url = f"https://api.moysklad.ru/api/remap/1.2/entity/product/metadata/attributes/{ATTRIBUTE_ID}=true"
-        params["filter"] = filter_url
-        logging.info(f"Using API filter for attribute: {ATTRIBUTE_ID}")
+    products = await fetch_entity_items(token, "product", use_attribute_filter=True)
+    bundles = await fetch_entity_items(token, "bundle", use_attribute_filter=False)
 
-    products = []
-    timeout = aiohttp.ClientTimeout(total=60)
-    async with aiohttp.ClientSession(timeout=timeout) as session:
-        current_url = url
-        current_params = params
-        while current_url:
-            logging.info(f"Fetching page: {current_url}")
-            try:
-                async with session.get(current_url, headers=headers, params=current_params) as response:
-                    if response.status != 200:
-                        logging.error(f"API error: {response.status} - {await response.text()}")
-                        return []
-                    data = await response.json()
-            except Exception as e:
-                logging.error(f"Exception while fetching products: {e}")
-                return []
-
-            rows = data.get("rows", [])
-            logging.info(f"Fetched {len(rows)} products from current page.")
-
-            if "filter" in params:
-                products.extend(rows)
-                logging.info(f"Filter active, added {len(rows)} products")
-            else:
-                filtered = [p for p in rows if has_kaspi_attribute(p)]
-                products.extend(filtered)
-                logging.info(f"Local filtering, added {len(filtered)} products")
-
-            current_url = data.get("meta", {}).get("nextHref")
-            current_params = None
-    logging.info(f"Total fetched {len(products)} products")
-    return products
+    total_items = products + bundles
+    logging.info(f"Fetched {len(products)} products and {len(bundles)} bundles. Total items: {len(total_items)}")
+    return total_items
 
 async def generate_xml(products):
     logging.info(f"Starting XML generation for {len(products)} products.")
@@ -279,18 +298,57 @@ async def generate_xml(products):
 
     stock_data = {}
     if products:
+        logging.info("generate_xml: запрашиваем остатки по складу для всех позиций...")
+        t_stock = time.time()
         stock_data = await get_stock_for_products(products)
-        logging.info(f"Получено данных об остатках для {len(stock_data)} продуктов")
+        logging.info(f"generate_xml: остатки получены для {len(stock_data)} товаров за {time.time() - t_stock:.1f} секунд")
 
     products_in_xml = 0
     products_with_zero_stock = 0
 
     for p in products:
         product_id = p.get("id")
-        stock_count = stock_data.get(product_id, 0)
-        
-        # Убеждаемся что stock_count целое число
-        stock_count = int(stock_count)
+        meta = p.get("meta", {})
+        entity_type = meta.get("type", "product")
+
+        # Остаток для товара берём напрямую из отчета, для комплекта считаем по компонентам
+        if entity_type == "product":
+            stock_count = int(stock_data.get(product_id, 0))
+        elif entity_type == "bundle":
+            # Расчет остатка комплекта по компонентам: минимум по доступности всех товарных компонент
+            components_block = p.get("components") or []
+            if isinstance(components_block, dict):
+                raw_components = components_block.get("rows") or []
+            elif isinstance(components_block, list):
+                raw_components = components_block
+            else:
+                raw_components = []
+
+            bundle_available = None
+            for comp in raw_components:
+                assortment = comp.get("assortment") if isinstance(comp, dict) else None
+                if isinstance(assortment, str):
+                    assortment = {"meta": {"href": assortment}}
+                assortment = assortment or {}
+                comp_meta = assortment.get("meta", {})
+                if comp_meta.get("type") != "product":
+                    continue
+                comp_id = comp_meta.get("href", "").split("/")[-1].split("?")[0]
+                quantity = comp.get("quantity", 1) if isinstance(comp, dict) else 1
+                available_comp = int(stock_data.get(comp_id, 0))
+                # Сколько комплектов можно собрать из этого компонента
+                if quantity <= 0:
+                    continue
+                comp_limit = available_comp // quantity
+                if bundle_available is None:
+                    bundle_available = comp_limit
+                else:
+                    bundle_available = min(bundle_available, comp_limit)
+
+            stock_count = int(bundle_available or 0)
+            logging.debug(f"Комплект {p.get('name', 'Unknown')} (ID: {product_id}) доступен в кол-ве {stock_count} по компонентам.")
+        else:
+            stock_count = 0
 
         if stock_count == 0:
             products_with_zero_stock += 1
@@ -352,13 +410,21 @@ async def generate_xml(products):
 
 async def update_xml():
     logging.info('update_xml: started')
+    print(f"[{datetime.datetime.now().isoformat()}] update_xml: старт")
+    t_start = time.time()
+
     products = await fetch_products()
     logging.info(f'update_xml: fetched {len(products)} products from MoySklad.')
+    print(f"[{datetime.datetime.now().isoformat()}] update_xml: получено {len(products)} позиций из МойСклад за {time.time() - t_start:.1f} секунд")
+
     if not products:
         logging.error("Не удалось получить товары из МойСклад. Пропускаем генерацию XML.")
         return
 
+    t_gen = time.time()
     xml_generated_successfully = await generate_xml(products)
+    print(f"[{datetime.datetime.now().isoformat()}] update_xml: generate_xml завершен за {time.time() - t_gen:.1f} секунд")
+
     if xml_generated_successfully:
         logging.info('update_xml: finished successfully.')
     else:

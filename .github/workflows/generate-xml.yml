@@ -3,7 +3,7 @@ name: Generate and publish kaspi.xml
 on:
   schedule:
     # every hour
-    - cron: '55 * * * *'
+    - cron: '25,55 * * * *'
   workflow_dispatch: {}
 
 jobs:
