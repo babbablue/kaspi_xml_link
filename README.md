@@ -15,10 +15,10 @@
    ```env
    MS_LOGIN=your_login
    MS_PASSWORD=your_password
-   ATTRIBUTE_ID=14858c5a-ccb7-11ef-0a80-08a200511bcd
-   PRICE_ATTRIBUTE_ID=fc15ca1c-d188-4088-87b1-44a749aece17
-   COMPANY=ИП ВОЗРОЖДЕНИЕ
-   MERCHANT_ID=30286450
+   ATTRIBUTE_ID=id атрибута чекбокса выгружать на каспи
+   PRICE_ATTRIBUTE_ID=id цены
+   COMPANY=Название компании в каспи
+   MERCHANT_ID=id продавца в каспи
    ```
 
 3. **Запустите генерацию:**
@@ -53,8 +53,8 @@ MS_LOGIN=your_login
 MS_PASSWORD=your_password
 ATTRIBUTE_ID=14858c5a-ccb7-11ef-0a80-08a200511bcd
 PRICE_ATTRIBUTE_ID=fc15ca1c-d188-4088-87b1-44a749aece17
-COMPANY=ИП ВОЗРОЖДЕНИЕ
-MERCHANT_ID=30286450
+COMPANY=Название компании
+MERCHANT_ID=30286421
 ```
 
 Или используйте переменные окружения системы.
@@ -120,8 +120,8 @@ python cloud_run.py
 
 ```xml
 <kaspi_catalog xmlns="kaspiShopping" date="YYYY-MM-DD">
-  <company>ИП "ВОЗРОЖДЕНИЕ"</company>
-  <merchantid>30286450</merchantid>
+  <company>КОмпани нейм</company>
+  <merchantid>30286426</merchantid>
   <offers>
     <offer sku="123">
       <model>Название товара</model>
