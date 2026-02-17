@@ -355,8 +355,8 @@ async def generate_xml(products):
             logging.debug(f"Продукт {p.get('name', 'Unknown')} (ID: {product_id}) имеет нулевой остаток, пропускаем.")
             continue
 
-        # Используем артикул (article) в качестве SKU, если он есть, иначе код (code)
-        product_sku = p.get("article") or p.get("code") or str(p["id"])
+        # Используем только код (code) в качестве SKU, как указано пользователем
+        product_sku = p.get("code") or str(p["id"])
         offer = ET.SubElement(offers, "offer", sku=product_sku)
         ET.SubElement(offer, "model").text = p.get("name", "Unknown")
         brand_name = p.get("brand", {}).get("name", "Без бренда") if p.get("brand") else "Без бренда"

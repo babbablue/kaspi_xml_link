@@ -48,5 +48,6 @@ Thumbs.db
 
 find_attributes.py
 uncheck_kaspi_products.py
+fix_ms_codes.py
 
 _corpus_/

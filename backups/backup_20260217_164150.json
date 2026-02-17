@@ -1,0 +1,3857 @@
+[
+    {
+        "id": "0023c6c2-025d-11f1-0a80-00d10003fb04",
+        "name": "Лента атласная Лучший тесть,теща 10*180 см 2 шт",
+        "article": "4372002",
+        "current_code": "169778782223081",
+        "folder_found": "Код",
+        "new_code": "4372002",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/0023c6c2-025d-11f1-0a80-00d10003fb04",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=0023b7f5-025d-11f1-0a80-00d10003fb01"
+        }
+    },
+    {
+        "id": "02f38f80-8644-11ef-0a80-17800016acef",
+        "name": "Набор для росписи яиц восковыми мелками \"Узоры\"",
+        "article": "1557278",
+        "current_code": "506377",
+        "folder_found": "Код",
+        "new_code": "1557278",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/02f38f80-8644-11ef-0a80-17800016acef",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=02f38571-8644-11ef-0a80-17800016aced"
+        }
+    },
+    {
+        "id": "03233d46-8644-11ef-0a80-17800016addf",
+        "name": "Подставка пасхальная \"ХВ\" на 3 яйца 19*20см.",
+        "article": "1253101",
+        "current_code": "506367",
+        "folder_found": "Код",
+        "new_code": "1253101",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/03233d46-8644-11ef-0a80-17800016addf",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=032331e4-8644-11ef-0a80-17800016addd"
+        }
+    },
+    {
+        "id": "03faf819-0268-11f1-0a80-0bbd00062b1c",
+        "name": "Набор обложка для паспорта и ручка Бабушке 15*17,5 см",
+        "article": "1435130",
+        "current_code": "169778782223095",
+        "folder_found": "Код",
+        "new_code": "1435130",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/03faf819-0268-11f1-0a80-0bbd00062b1c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=03faeb96-0268-11f1-0a80-0bbd00062b19"
+        }
+    },
+    {
+        "id": "06c7ef01-fc32-11f0-0a80-1818002015f9",
+        "name": "Пакет подарочный №256 \"Пасха\" 11х14х5см.",
+        "article": "1620256",
+        "current_code": "169778782222830",
+        "folder_found": "Код",
+        "new_code": "1620256",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/06c7ef01-fc32-11f0-0a80-1818002015f9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=06c7e599-fc32-11f0-0a80-1818002015f6"
+        }
+    },
+    {
+        "id": "0732cad2-f6d0-11f0-0a80-0df80010c08f",
+        "name": "Вышивка подставка для чашки \"Осенний узор\" 11*14см.",
+        "article": "8213",
+        "current_code": "169778782222673",
+        "folder_found": "Код",
+        "new_code": "8213",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/0732cad2-f6d0-11f0-0a80-0df80010c08f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=0732c0c9-f6d0-11f0-0a80-0df80010c08c"
+        }
+    },
+    {
+        "id": "08625ed5-f842-11f0-0a80-1cfc000a7e51",
+        "name": "Открытка № 534 мини \"ХВ\" 10х7см.",
+        "article": "2889534",
+        "current_code": "169778782222720",
+        "folder_found": "Код",
+        "new_code": "2889534",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/08625ed5-f842-11f0-0a80-1cfc000a7e51",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=08625317-f842-11f0-0a80-1cfc000a7e4e"
+        }
+    },
+    {
+        "id": "08bdbdce-01cc-11f1-0a80-0328000f81f2",
+        "name": "Талисман \"Крестнику\" дерево 3*6см.",
+        "article": "2605120",
+        "current_code": "169778782223071",
+        "folder_found": "Код",
+        "new_code": "2605120",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/08bdbdce-01cc-11f1-0a80-0328000f81f2",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=08bdb465-01cc-11f1-0a80-0328000f81ef"
+        }
+    },
+    {
+        "id": "08c7ba8a-8645-11ef-0a80-178000175264",
+        "name": "Лента атласная Мальчишник белая 10*180 см",
+        "article": "48289",
+        "current_code": "511227",
+        "folder_found": "Код",
+        "new_code": "48289",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/08c7ba8a-8645-11ef-0a80-178000175264",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=08c7b159-8645-11ef-0a80-178000175262"
+        }
+    },
+    {
+        "id": "08f339cb-fc24-11f0-0a80-19e3001c9200",
+        "name": "Набор для создания корзинки \"Светлой Пасхи\" 3+",
+        "article": "1526561",
+        "current_code": "169778782222806",
+        "folder_found": "Код",
+        "new_code": "1526561",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/08f339cb-fc24-11f0-0a80-19e3001c9200",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=08f32dcb-fc24-11f0-0a80-19e3001c91fd"
+        }
+    },
+    {
+        "id": "09b321eb-fa84-11f0-0a80-10990015bcc9",
+        "name": "Подставка пасхальная \"Храм\" на 6 яиц 21,5*19,9см.",
+        "article": "3715238",
+        "current_code": "169778782222743",
+        "folder_found": "Код",
+        "new_code": "3715238",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/09b321eb-fa84-11f0-0a80-10990015bcc9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=09b31535-fa84-11f0-0a80-10990015bcc6"
+        }
+    },
+    {
+        "id": "09e54df3-8644-11ef-0a80-17800016b5eb",
+        "name": "Значок \"За творческие успехи\" 4,5см",
+        "article": "1212442",
+        "current_code": "505153",
+        "folder_found": "Код",
+        "new_code": "1212442",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/09e54df3-8644-11ef-0a80-17800016b5eb",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=09e54276-8644-11ef-0a80-17800016b5e9"
+        }
+    },
+    {
+        "id": "0c1abfd4-8644-11ef-0a80-17800016b70f",
+        "name": "Кружка керамическая \"Христос Воскрес\" 300мл.",
+        "article": "126879",
+        "current_code": "506395",
+        "folder_found": "Код",
+        "new_code": "126879",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/0c1abfd4-8644-11ef-0a80-17800016b70f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=0c1ab327-8644-11ef-0a80-17800016b70d"
+        }
+    },
+    {
+        "id": "0d571bdd-fc2b-11f0-0a80-109d001e5cc5",
+        "name": "Коробочка под яйцо 995 7*7см.",
+        "article": "1746995",
+        "current_code": "169778782222815",
+        "folder_found": "Код",
+        "new_code": "1746995",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/0d571bdd-fc2b-11f0-0a80-109d001e5cc5",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=0d571282-fc2b-11f0-0a80-109d001e5cc2"
+        }
+    },
+    {
+        "id": "10615577-8644-11ef-0a80-17800016b976",
+        "name": "Медаль металл \"Любимая женщина\" 5см.",
+        "article": "2340905",
+        "current_code": "505178",
+        "folder_found": "Код",
+        "new_code": "2340905",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/10615577-8644-11ef-0a80-17800016b976",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=10614abe-8644-11ef-0a80-17800016b974"
+        }
+    },
+    {
+        "id": "11f973b7-8644-11ef-0a80-17800016ba53",
+        "name": "Медаль на ленте \"Именинник\" 7,6см.",
+        "article": "812354",
+        "current_code": "505179",
+        "folder_found": "Код",
+        "new_code": "812354",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/11f973b7-8644-11ef-0a80-17800016ba53",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=11f968cc-8644-11ef-0a80-17800016ba51"
+        }
+    },
+    {
+        "id": "129877d0-8644-11ef-0a80-17800016bab7",
+        "name": "Лента нагрудная \"Любимый дедушка\" 15см.",
+        "article": "583592",
+        "current_code": "505180",
+        "folder_found": "Код",
+        "new_code": "583592",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/129877d0-8644-11ef-0a80-17800016bab7",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=12986bbc-8644-11ef-0a80-17800016bab5"
+        }
+    },
+    {
+        "id": "12b2e58f-00d7-11f1-0a80-05db0006f5fe",
+        "name": "Медаль картон \"Тёща\" 11*8см.",
+        "article": "29911",
+        "current_code": "169778782222979",
+        "folder_found": "Код",
+        "new_code": "29911",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/12b2e58f-00d7-11f1-0a80-05db0006f5fe",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=12b2d806-00d7-11f1-0a80-05db0006f5fb"
+        }
+    },
+    {
+        "id": "12ef302f-8645-11ef-0a80-178000175872",
+        "name": "Монета счастливая \"Ты\" 3,2см. стразы",
+        "article": "121941",
+        "current_code": "506014",
+        "folder_found": "Код",
+        "new_code": "121941",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/12ef302f-8645-11ef-0a80-178000175872",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=12ef2518-8645-11ef-0a80-178000175870"
+        }
+    },
+    {
+        "id": "133fff3c-00f7-11f1-0a80-0bb4000f5e6b",
+        "name": "Медаль на ленте \"Мне 1 годик\" 5,5см.",
+        "article": "0028",
+        "current_code": "169778782223020",
+        "folder_found": "Код",
+        "new_code": "0028",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/133fff3c-00f7-11f1-0a80-0bb4000f5e6b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=133ff79d-00f7-11f1-0a80-0bb4000f5e68"
+        }
+    },
+    {
+        "id": "1358f787-00f6-11f1-0a80-1446000ecf97",
+        "name": "Медаль на ленте \"Лучшая в мире семтра\" 5,5см.",
+        "article": "53088",
+        "current_code": "169778782223015",
+        "folder_found": "Код",
+        "new_code": "53088",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/1358f787-00f6-11f1-0a80-1446000ecf97",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1358e93b-00f6-11f1-0a80-1446000ecf94"
+        }
+    },
+    {
+        "id": "146a032c-01be-11f1-0a80-0255000c8d63",
+        "name": "Монета в открытке \"Скорпион\" 2,5см.",
+        "article": "3516468",
+        "current_code": "169778782223057",
+        "folder_found": "Код",
+        "new_code": "3516468",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/146a032c-01be-11f1-0a80-0255000c8d63",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1469eb68-01be-11f1-0a80-0255000c8d60"
+        }
+    },
+    {
+        "id": "14b882e4-00f1-11f1-0a80-05db000ded7e",
+        "name": "Лента нагрудная \"Драгоценный свекр\" 15см.",
+        "article": "583610",
+        "current_code": "169778782223005",
+        "folder_found": "Код",
+        "new_code": "583610",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/14b882e4-00f1-11f1-0a80-05db000ded7e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=14b8741b-00f1-11f1-0a80-05db000ded7b"
+        }
+    },
+    {
+        "id": "15296d54-8645-11ef-0a80-1780001759e0",
+        "name": "Пасхальный набор для украшения кулича 12*16*1см.",
+        "article": "4491353",
+        "current_code": "506342",
+        "folder_found": "Код",
+        "new_code": "4491353",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/15296d54-8645-11ef-0a80-1780001759e0",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=152965ea-8645-11ef-0a80-1780001759de"
+        }
+    },
+    {
+        "id": "15653988-fb7c-11f0-0a80-0483000f3d04",
+        "name": "Подвески \"Набор Пасхальный -7\" 3шт. 5*3,7см.",
+        "article": "1828106",
+        "current_code": "169778782222777",
+        "folder_found": "Код",
+        "new_code": "1828106",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/15653988-fb7c-11f0-0a80-0483000f3d04",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=15652eb4-fb7c-11f0-0a80-0483000f3d01"
+        }
+    },
+    {
+        "id": "15ec96ff-8645-11ef-0a80-178000175a63",
+        "name": "Часы настольные на подставке \"Пасха\" 11см.",
+        "article": "778863",
+        "current_code": "506397",
+        "folder_found": "Код",
+        "new_code": "778863",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/15ec96ff-8645-11ef-0a80-178000175a63",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=15ec9086-8645-11ef-0a80-178000175a61"
+        }
+    },
+    {
+        "id": "162f3edd-8645-11ef-0a80-178000175a8b",
+        "name": "Набор декоративных элементов \"Пасха №3\" 1,4*2см. 20шт",
+        "article": "3034559",
+        "current_code": "506378",
+        "folder_found": "Код",
+        "new_code": "3034559",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/162f3edd-8645-11ef-0a80-178000175a8b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=162f3055-8645-11ef-0a80-178000175a89"
+        }
+    },
+    {
+        "id": "17ffac3d-fc2a-11f0-0a80-00b0001d90d6",
+        "name": "Коробочка под яйцо 990 7*7см.",
+        "article": "1746990",
+        "current_code": "169778782222811",
+        "folder_found": "Код",
+        "new_code": "1746990",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/17ffac3d-fc2a-11f0-0a80-00b0001d90d6",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=17ffa45f-fc2a-11f0-0a80-00b0001d90d3"
+        }
+    },
+    {
+        "id": "18241eb4-8644-11ef-0a80-17800016bdca",
+        "name": "Медаль фанера \"Прекрасная свидетельница\" 9см.",
+        "article": "163112",
+        "current_code": "505181",
+        "folder_found": "Код",
+        "new_code": "163112",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/18241eb4-8644-11ef-0a80-17800016bdca",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1824145e-8644-11ef-0a80-17800016bdc8"
+        }
+    },
+    {
+        "id": "185a34c1-f845-11f0-0a80-0470000a352a",
+        "name": "Подставка пасхальная на 1 яйцо \"Корзинка\" 11*13,5см.",
+        "article": "2704315",
+        "current_code": "169778782222726",
+        "folder_found": "Код",
+        "new_code": "2704315",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/185a34c1-f845-11f0-0a80-0470000a352a",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=185a2688-f845-11f0-0a80-0470000a3527"
+        }
+    },
+    {
+        "id": "18601785-fc31-11f0-0a80-14bb001eeaed",
+        "name": "Пакет ламинированный №326 «Пасха» 12×15×5,5см.",
+        "article": "4596326",
+        "current_code": "169778782222825",
+        "folder_found": "Код",
+        "new_code": "4596326",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/18601785-fc31-11f0-0a80-14bb001eeaed",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=18600848-fc31-11f0-0a80-14bb001eeaea"
+        }
+    },
+    {
+        "id": "195487b2-8644-11ef-0a80-17800016be7e",
+        "name": "Набор для декорирования пасхальных яиц №6",
+        "article": "2705990",
+        "current_code": "506379",
+        "folder_found": "Код",
+        "new_code": "2705990",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/195487b2-8644-11ef-0a80-17800016be7e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=19547c2b-8644-11ef-0a80-17800016be7c"
+        }
+    },
+    {
+        "id": "1957c9d9-0262-11f1-0a80-0bbd0004dfb9",
+        "name": "Лента атласная 60 чудесных лет 10*180 см",
+        "article": "60458",
+        "current_code": "169778782223088",
+        "folder_found": "Код",
+        "new_code": "60458",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/1957c9d9-0262-11f1-0a80-0bbd0004dfb9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1957c144-0262-11f1-0a80-0bbd0004dfb6"
+        }
+    },
+    {
+        "id": "1ada5032-fc19-11f0-0a80-096b00199a2a",
+        "name": "Подставка под яйцо фигурная \"Цветок\" 10см. восточная",
+        "article": "867698",
+        "current_code": "169778782222804",
+        "folder_found": "Код",
+        "new_code": "867698",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/1ada5032-fc19-11f0-0a80-096b00199a2a",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1ada471d-fc19-11f0-0a80-096b00199a26"
+        }
+    },
+    {
+        "id": "1b3cc844-8645-11ef-0a80-178000175d67",
+        "name": "Орден \"Почетная гостья\" красный 7,5*12,5см.",
+        "article": "479001",
+        "current_code": "505182",
+        "folder_found": "Код",
+        "new_code": "479001",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/1b3cc844-8645-11ef-0a80-178000175d67",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1b3cbde8-8645-11ef-0a80-178000175d65"
+        }
+    },
+    {
+        "id": "1cbbc251-8644-11ef-0a80-17800016c07f",
+        "name": "Набор для создания пасхального украшения \"Цветочки\"",
+        "article": "1534074",
+        "current_code": "506380",
+        "folder_found": "Код",
+        "new_code": "1534074",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/1cbbc251-8644-11ef-0a80-17800016c07f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1cbbb8a0-8644-11ef-0a80-17800016c07d"
+        }
+    },
+    {
+        "id": "1e56263b-8645-11ef-0a80-178000175eed",
+        "name": "Паспорт жениха (для выкупа) 9*13 см",
+        "article": "2741178",
+        "current_code": "511236",
+        "folder_found": "Код",
+        "new_code": "2741178",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/1e56263b-8645-11ef-0a80-178000175eed",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1e56199c-8645-11ef-0a80-178000175eeb"
+        }
+    },
+    {
+        "id": "1efe4e5a-8645-11ef-0a80-178000175f45",
+        "name": "Лента атласная 1,2,3 место 10*180 см 3 шт",
+        "article": "284754",
+        "current_code": "511237",
+        "folder_found": "Код",
+        "new_code": "284754",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/1efe4e5a-8645-11ef-0a80-178000175f45",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1efe42d1-8645-11ef-0a80-178000175f43"
+        }
+    },
+    {
+        "id": "209eea30-8644-11ef-0a80-17800016c2fa",
+        "name": "Орден \"Мировой тесть\" зелёный 7,5*12,5см.",
+        "article": "537799",
+        "current_code": "505184",
+        "folder_found": "Код",
+        "new_code": "537799",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/209eea30-8644-11ef-0a80-17800016c2fa",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=209ee205-8644-11ef-0a80-17800016c2f8"
+        }
+    },
+    {
+        "id": "20f87a68-01a6-11f1-0a80-00cc0007030f",
+        "name": "Медаль металл \"Серебрянаая свадьба 25 лет\" 4см.",
+        "article": "1997285",
+        "current_code": "169778782223041",
+        "folder_found": "Код",
+        "new_code": "1997285",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/20f87a68-01a6-11f1-0a80-00cc0007030f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=20f86ffa-01a6-11f1-0a80-00cc0007030c"
+        }
+    },
+    {
+        "id": "222b073a-0252-11f1-0a80-1c3300027a64",
+        "name": "Лента атласнаяя Лучший свидетель 10*190 см",
+        "article": "188562",
+        "current_code": "169778782223075",
+        "folder_found": "Код",
+        "new_code": "188562",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/222b073a-0252-11f1-0a80-1c3300027a64",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=222af2c9-0252-11f1-0a80-1c3300027a61"
+        }
+    },
+    {
+        "id": "223d73ce-01b1-11f1-0a80-084e00092c92",
+        "name": "Фигура на подставке дерево \"Лучший медицинский работник\" 10*10,4см.",
+        "article": "1306666",
+        "current_code": "169778782223049",
+        "folder_found": "Код",
+        "new_code": "1306666",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/223d73ce-01b1-11f1-0a80-084e00092c92",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=223d5ac0-01b1-11f1-0a80-084e00092c8f"
+        }
+    },
+    {
+        "id": "22407269-8645-11ef-0a80-178000176135",
+        "name": "Медаль-магнит \"Выпускник\" полимер 8,5*9,2см.",
+        "article": "650288",
+        "current_code": "510221",
+        "folder_found": "Код",
+        "new_code": "650288",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/22407269-8645-11ef-0a80-178000176135",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=224068f6-8645-11ef-0a80-178000176133"
+        }
+    },
+    {
+        "id": "227123fe-8644-11ef-0a80-17800016c3ef",
+        "name": "Орден \"Именинник\" синий 7,5*12,5см.",
+        "article": "479014",
+        "current_code": "505185",
+        "folder_found": "Код",
+        "new_code": "479014",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/227123fe-8644-11ef-0a80-17800016c3ef",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=22711930-8644-11ef-0a80-17800016c3ed"
+        }
+    },
+    {
+        "id": "22ef6849-00f5-11f1-0a80-02ac000f0cfb",
+        "name": "Медаль на ленте \"С юбилеем 55\" 5,5см.",
+        "article": "3590639",
+        "current_code": "169778782223012",
+        "folder_found": "Код",
+        "new_code": "3590639",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/22ef6849-00f5-11f1-0a80-02ac000f0cfb",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=22ef5acb-00f5-11f1-0a80-02ac000f0cf8"
+        }
+    },
+    {
+        "id": "2389172d-8644-11ef-0a80-17800016c485",
+        "name": "Подставка пасхальная на 1 яйцо \"Петух\" 15,7*21,2см.",
+        "article": "1695095",
+        "current_code": "506369",
+        "folder_found": "Код",
+        "new_code": "1695095",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/2389172d-8644-11ef-0a80-17800016c485",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=23890aca-8644-11ef-0a80-17800016c483"
+        }
+    },
+    {
+        "id": "23fab1d1-f846-11f0-0a80-0b3c000b07bf",
+        "name": "Подставка пасхальная на 1 яйцо \"Цыплёнок\" 14*10,5см.",
+        "article": "2704314",
+        "current_code": "169778782222730",
+        "folder_found": "Код",
+        "new_code": "2704314",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/23fab1d1-f846-11f0-0a80-0b3c000b07bf",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=23faa882-f846-11f0-0a80-0b3c000b07bc"
+        }
+    },
+    {
+        "id": "248fe328-8645-11ef-0a80-178000176404",
+        "name": "Медаль картон \"Тесть\" 11*8см.",
+        "article": "29910",
+        "current_code": "505157",
+        "folder_found": "Код",
+        "new_code": "29910",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/248fe328-8645-11ef-0a80-178000176404",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=248fd7bb-8645-11ef-0a80-178000176402"
+        }
+    },
+    {
+        "id": "24ab122f-fc33-11f0-0a80-00b0001f84ec",
+        "name": "Пакет подарочный №250 \"Пасха\" 11х14х5см.",
+        "article": "1620250",
+        "current_code": "169778782222835",
+        "folder_found": "Код",
+        "new_code": "1620250",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/24ab122f-fc33-11f0-0a80-00b0001f84ec",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=24ab0abd-fc33-11f0-0a80-00b0001f84e9"
+        }
+    },
+    {
+        "id": "256bd7cd-0269-11f1-0a80-13a4000660c9",
+        "name": "Набор блокнот и ручка Звездные войны №2 11*15 см",
+        "article": "1600552",
+        "current_code": "169778782223097",
+        "folder_found": "Код",
+        "new_code": "1600552",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/256bd7cd-0269-11f1-0a80-13a4000660c9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=256bba92-0269-11f1-0a80-13a4000660c6"
+        }
+    },
+    {
+        "id": "26a1a270-8645-11ef-0a80-1780001765bf",
+        "name": "Медаль картон \"С рождением малышки\" 9см.",
+        "article": "1500718",
+        "current_code": "505186",
+        "folder_found": "Код",
+        "new_code": "1500718",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/26a1a270-8645-11ef-0a80-1780001765bf",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=26a197f5-8645-11ef-0a80-1780001765bd"
+        }
+    },
+    {
+        "id": "285bc073-01c3-11f1-0a80-0255000dfb33",
+        "name": "Монета счастливая \"Я тебя люблю\" 3,2см. стразы",
+        "article": "121935",
+        "current_code": "169778782223059",
+        "folder_found": "Код",
+        "new_code": "121935",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/285bc073-01c3-11f1-0a80-0255000dfb33",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=285bb5c4-01c3-11f1-0a80-0255000dfb30"
+        }
+    },
+    {
+        "id": "2b951c34-fb71-11f0-0a80-00b0000d1258",
+        "name": "Пасхальный набор №2 для украшения кулича 12*16*1см.",
+        "article": "4491351",
+        "current_code": "169778782222772",
+        "folder_found": "Код",
+        "new_code": "4491351",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/2b951c34-fb71-11f0-0a80-00b0000d1258",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=2b951121-fb71-11f0-0a80-00b0000d1255"
+        }
+    },
+    {
+        "id": "2bbf34bf-8644-11ef-0a80-17800016c940",
+        "name": "Ложка сувенирная №1 2,5*13см.",
+        "article": "5242272",
+        "current_code": "513792",
+        "folder_found": "Код",
+        "new_code": "5242272",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/2bbf34bf-8644-11ef-0a80-17800016c940",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=2bbf29a7-8644-11ef-0a80-17800016c93e"
+        }
+    },
+    {
+        "id": "2e8932bd-f6be-11f0-0a80-03eb000d37d5",
+        "name": "Салфетка на стол Пасха жостово 40*25см.",
+        "article": "4774542",
+        "current_code": "169778782222664",
+        "folder_found": "Код",
+        "new_code": "4774542",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/2e8932bd-f6be-11f0-0a80-03eb000d37d5",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=2e892970-f6be-11f0-0a80-03eb000d37d2"
+        }
+    },
+    {
+        "id": "2f63c873-8644-11ef-0a80-17800016cb58",
+        "name": "Медаль картон \"Свадьба\" 7,5см. набор 8 шт.",
+        "article": "70654",
+        "current_code": "505159",
+        "folder_found": "Код",
+        "new_code": "70654",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/2f63c873-8644-11ef-0a80-17800016cb58",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=2f63bc73-8644-11ef-0a80-17800016cb56"
+        }
+    },
+    {
+        "id": "336542df-8644-11ef-0a80-17800016cd99",
+        "name": "Набор обложка для паспорта Любимой маме 12*15 см",
+        "article": "2583153",
+        "current_code": "507699",
+        "folder_found": "Код",
+        "new_code": "2583153",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/336542df-8644-11ef-0a80-17800016cd99",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=33653ae6-8644-11ef-0a80-17800016cd97"
+        }
+    },
+    {
+        "id": "36795d5c-fc2f-11f0-0a80-096b001ee6ee",
+        "name": "Пакет подарочный №253 \"Пасха\" 18х23х8см.",
+        "article": "1620253",
+        "current_code": "169778782222819",
+        "folder_found": "Код",
+        "new_code": "1620253",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/36795d5c-fc2f-11f0-0a80-096b001ee6ee",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=367953c0-fc2f-11f0-0a80-096b001ee6eb"
+        }
+    },
+    {
+        "id": "37c8faef-8645-11ef-0a80-17800017707a",
+        "name": "Высечки для скрапбукинга 40шт.",
+        "article": "2711806",
+        "current_code": "506312",
+        "folder_found": "Код",
+        "new_code": "2711806",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/37c8faef-8645-11ef-0a80-17800017707a",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=37c8f22c-8645-11ef-0a80-178000177078"
+        }
+    },
+    {
+        "id": "3872b3dc-01be-11f1-0a80-0de8000cb65a",
+        "name": "Монета в открытке \"Овен\" 2,5см.",
+        "article": "3516461",
+        "current_code": "169778782223058",
+        "folder_found": "Код",
+        "new_code": "3516461",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3872b3dc-01be-11f1-0a80-0de8000cb65a",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3872a806-01be-11f1-0a80-0de8000cb657"
+        }
+    },
+    {
+        "id": "3976312e-8644-11ef-0a80-17800016d0a3",
+        "name": "Подставка пасхальная на 4 яйца \"Гжель\" 18,4*18,4см.",
+        "article": "1761482",
+        "current_code": "506370",
+        "folder_found": "Код",
+        "new_code": "1761482",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3976312e-8644-11ef-0a80-17800016d0a3",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=39762475-8644-11ef-0a80-17800016d0a1"
+        }
+    },
+    {
+        "id": "39770ed6-00ca-11f1-0a80-097600048f21",
+        "name": "Медаль-магнит \"За рождение дочки\" 8,5*9,2см.",
+        "article": "163082",
+        "current_code": "169778782222977",
+        "folder_found": "Код",
+        "new_code": "163082",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/39770ed6-00ca-11f1-0a80-097600048f21",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=397702c8-00ca-11f1-0a80-097600048f1e"
+        }
+    },
+    {
+        "id": "3a450420-f6c1-11f0-0a80-17e2000e4420",
+        "name": "Набор для создания пасхальной подвески 2шт. \"Курочки\"",
+        "article": "5017377",
+        "current_code": "169778782222668",
+        "folder_found": "Код",
+        "new_code": "5017377",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3a450420-f6c1-11f0-0a80-17e2000e4420",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3a44fb5e-f6c1-11f0-0a80-17e2000e441d"
+        }
+    },
+    {
+        "id": "3a8ac5e4-f6c9-11f0-0a80-0b33000fc1c0",
+        "name": "Ложка сувенирная №2 2,5*13см.",
+        "article": "5242271",
+        "current_code": "169778782222672",
+        "folder_found": "Код",
+        "new_code": "5242271",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3a8ac5e4-f6c9-11f0-0a80-0b33000fc1c0",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3a8ab80a-f6c9-11f0-0a80-0b33000fc1bd"
+        }
+    },
+    {
+        "id": "3b67872b-00f2-11f1-0a80-157900102812",
+        "name": "Лента нагрудная \"Свидетель\" 15см.",
+        "article": "583603",
+        "current_code": "169778782223010",
+        "folder_found": "Код",
+        "new_code": "583603",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3b67872b-00f2-11f1-0a80-157900102812",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3b677d09-00f2-11f1-0a80-15790010280f"
+        }
+    },
+    {
+        "id": "3bd807a3-8644-11ef-0a80-17800016d20e",
+        "name": "Медаль-магнит \"Лучшей свидетельнице\" 8,5*9,2см.",
+        "article": "650292",
+        "current_code": "505189",
+        "folder_found": "Код",
+        "new_code": "650292",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3bd807a3-8644-11ef-0a80-17800016d20e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3bd7fea2-8644-11ef-0a80-17800016d20c"
+        }
+    },
+    {
+        "id": "3bde8eec-8644-11ef-0a80-17800016d213",
+        "name": "Монета \"Верняк-облом\" 2,2см.",
+        "article": "122759",
+        "current_code": "506015",
+        "folder_found": "Код",
+        "new_code": "122759",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3bde8eec-8644-11ef-0a80-17800016d213",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3bde868e-8644-11ef-0a80-17800016d211"
+        }
+    },
+    {
+        "id": "3c381044-8645-11ef-0a80-178000177297",
+        "name": "Орден \"Мировая тёща\" красный 7,5*12,5см.",
+        "article": "537798",
+        "current_code": "505190",
+        "folder_found": "Код",
+        "new_code": "537798",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3c381044-8645-11ef-0a80-178000177297",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3c3807ca-8645-11ef-0a80-178000177295"
+        }
+    },
+    {
+        "id": "3c533417-fc0d-11f0-0a80-0b940018fbb3",
+        "name": "Стеклянная подставка на 8 яиц «Венок» 20,5×20,5см.",
+        "article": "5263927",
+        "current_code": "169778782222796",
+        "folder_found": "Код",
+        "new_code": "5263927",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3c533417-fc0d-11f0-0a80-0b940018fbb3",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3c532cdb-fc0d-11f0-0a80-0b940018fbb0"
+        }
+    },
+    {
+        "id": "3d5033d2-01cc-11f1-0a80-0161000ec299",
+        "name": "Талисман \"Ангел любви\" дерево 3*6см.",
+        "article": "2605116",
+        "current_code": "169778782223072",
+        "folder_found": "Код",
+        "new_code": "2605116",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3d5033d2-01cc-11f1-0a80-0161000ec299",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3d5025b4-01cc-11f1-0a80-0161000ec296"
+        }
+    },
+    {
+        "id": "3f3a8a4a-fa76-11f0-0a80-109900138bf9",
+        "name": "Подставка пасхальная \"Ангелочек\" на 12 яиц 30*30см.",
+        "article": "4467971",
+        "current_code": "169778782222741",
+        "folder_found": "Код",
+        "new_code": "4467971",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3f3a8a4a-fa76-11f0-0a80-109900138bf9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3f3a7f02-fa76-11f0-0a80-109900138bf6"
+        }
+    },
+    {
+        "id": "3f521da0-fc30-11f0-0a80-1818001fb2ce",
+        "name": "Пакет подарочный №676 \"Пасха\" 11х14х5см.",
+        "article": "1204676",
+        "current_code": "169778782222824",
+        "folder_found": "Код",
+        "new_code": "1204676",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/3f521da0-fc30-11f0-0a80-1818001fb2ce",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=3f5214ea-fc30-11f0-0a80-1818001fb2cb"
+        }
+    },
+    {
+        "id": "406ba237-fb7c-11f0-0a80-1818000fa4f4",
+        "name": "Подвески \"Набор Пасхальный -8\" 3шт. 5*3,7см.",
+        "article": "1828107",
+        "current_code": "169778782222778",
+        "folder_found": "Код",
+        "new_code": "1828107",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/406ba237-fb7c-11f0-0a80-1818000fa4f4",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=406b995f-fb7c-11f0-0a80-1818000fa4f1"
+        }
+    },
+    {
+        "id": "40704339-fc31-11f0-0a80-096b001f75cb",
+        "name": "Пакет ламинированный №328 «Пасха» 12×15×5,5см.",
+        "article": "4596328",
+        "current_code": "169778782222826",
+        "folder_found": "Код",
+        "new_code": "4596328",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/40704339-fc31-11f0-0a80-096b001f75cb",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=40703628-fc31-11f0-0a80-096b001f75c8"
+        }
+    },
+    {
+        "id": "40f2ab8a-8645-11ef-0a80-1780001774f5",
+        "name": "Набор карточек для творчества 8шт.",
+        "article": "2792950",
+        "current_code": "513877",
+        "folder_found": "Код",
+        "new_code": "2792950",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/40f2ab8a-8645-11ef-0a80-1780001774f5",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=40f2a340-8645-11ef-0a80-1780001774f3"
+        }
+    },
+    {
+        "id": "41a2f5af-00f7-11f1-0a80-15790011394c",
+        "name": "Медаль на ленте \"с днём рождения-1\" 5,5см.",
+        "article": "0031",
+        "current_code": "169778782223021",
+        "folder_found": "Код",
+        "new_code": "0031",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/41a2f5af-00f7-11f1-0a80-15790011394c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=41a2ea95-00f7-11f1-0a80-157900113949"
+        }
+    },
+    {
+        "id": "422ac765-f851-11f0-0a80-09c6000d1c86",
+        "name": "Подставка на 8 яиц \"Семья\" 21*21см.",
+        "article": "1695098",
+        "current_code": "169778782222735",
+        "folder_found": "Код",
+        "new_code": "1695098",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/422ac765-f851-11f0-0a80-09c6000d1c86",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=422abdce-f851-11f0-0a80-09c6000d1c83"
+        }
+    },
+    {
+        "id": "423e4ded-00f6-11f1-0a80-0de2000fd05d",
+        "name": "Медаль на ленте \"Золотая тёща\" 5,5см.",
+        "article": "53228",
+        "current_code": "169778782223016",
+        "folder_found": "Код",
+        "new_code": "53228",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/423e4ded-00f6-11f1-0a80-0de2000fd05d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=423e4529-00f6-11f1-0a80-0de2000fd05a"
+        }
+    },
+    {
+        "id": "44e12843-f83e-11f0-0a80-109500099e8c",
+        "name": "Открытка № 103 мини \"ХВ\" 7х7см.",
+        "article": "2878103",
+        "current_code": "169778782222715",
+        "folder_found": "Код",
+        "new_code": "2878103",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/44e12843-f83e-11f0-0a80-109500099e8c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=44e11b85-f83e-11f0-0a80-109500099e89"
+        }
+    },
+    {
+        "id": "4542a488-0268-11f1-0a80-032c00062ccb",
+        "name": "Набор обложка для паспорта  ручка Маме 15*17,5 см",
+        "article": "1435127",
+        "current_code": "169778782223096",
+        "folder_found": "Код",
+        "new_code": "1435127",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/4542a488-0268-11f1-0a80-032c00062ccb",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=45429866-0268-11f1-0a80-032c00062cc8"
+        }
+    },
+    {
+        "id": "461c6143-00ef-11f1-0a80-0ede000d943e",
+        "name": "Лента нагрудная \"Любимая бабушка\" 15см.",
+        "article": "583591",
+        "current_code": "169778782223002",
+        "folder_found": "Код",
+        "new_code": "583591",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/461c6143-00ef-11f1-0a80-0ede000d943e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=461c5565-00ef-11f1-0a80-0ede000d943b"
+        }
+    },
+    {
+        "id": "474587a7-fc2a-11f0-0a80-0fc6001e7f82",
+        "name": "Коробочка под яйцо 994 7*7см.",
+        "article": "1746994",
+        "current_code": "169778782222812",
+        "folder_found": "Код",
+        "new_code": "1746994",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/474587a7-fc2a-11f0-0a80-0fc6001e7f82",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=47457bf7-fc2a-11f0-0a80-0fc6001e7f7f"
+        }
+    },
+    {
+        "id": "4799f8c1-01bd-11f1-0a80-1c30000c7349",
+        "name": "Монета в открытке \"Выбор на охоту, на рыбалку\" 2,2см.",
+        "article": "3546047",
+        "current_code": "169778782223056",
+        "folder_found": "Код",
+        "new_code": "3546047",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/4799f8c1-01bd-11f1-0a80-1c30000c7349",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=4799f004-01bd-11f1-0a80-1c30000c7346"
+        }
+    },
+    {
+        "id": "47e2805a-8644-11ef-0a80-17800016da2a",
+        "name": "Медаль-магнит \"Лучший друг жениха\" 8,5*9,2см.",
+        "article": "1221732",
+        "current_code": "505194",
+        "folder_found": "Код",
+        "new_code": "1221732",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/47e2805a-8644-11ef-0a80-17800016da2a",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=47e27798-8644-11ef-0a80-17800016da28"
+        }
+    },
+    {
+        "id": "48303d0d-fc32-11f0-0a80-0483001ffd2e",
+        "name": "Пакет подарочный №836 \"Пасха\" 11х14х5см.",
+        "article": "2678836",
+        "current_code": "169778782222831",
+        "folder_found": "Код",
+        "new_code": "2678836",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/48303d0d-fc32-11f0-0a80-0483001ffd2e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=48303195-fc32-11f0-0a80-0483001ffd2b"
+        }
+    },
+    {
+        "id": "4ac7d37d-8645-11ef-0a80-178000177b4b",
+        "name": "Гирлянда на люверсах\" До свидания, садик!\" 205 см.",
+        "article": "1197038",
+        "current_code": "510226",
+        "folder_found": "Код",
+        "new_code": "1197038",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/4ac7d37d-8645-11ef-0a80-178000177b4b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=4ac7ca21-8645-11ef-0a80-178000177b49"
+        }
+    },
+    {
+        "id": "4d865656-025e-11f1-0a80-025a00040d2c",
+        "name": "Лента атласная Почетная свидетельница,свидетель 10*180 см 2 шт",
+        "article": "709840",
+        "current_code": "169778782223083",
+        "folder_found": "Код",
+        "new_code": "709840",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/4d865656-025e-11f1-0a80-025a00040d2c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=4d864672-025e-11f1-0a80-025a00040d29"
+        }
+    },
+    {
+        "id": "4f0945f3-8645-11ef-0a80-178000177dac",
+        "name": "Медаль-магнит \"Выпускник начальной школы\" Дети 8,5*9,2см.",
+        "article": "2798172",
+        "current_code": "510227",
+        "folder_found": "Код",
+        "new_code": "2798172",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/4f0945f3-8645-11ef-0a80-178000177dac",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=4f093ef0-8645-11ef-0a80-178000177daa"
+        }
+    },
+    {
+        "id": "50d181e3-01bc-11f1-0a80-1ba7000cad6f",
+        "name": "Монета в открытке \"С днем свадьбы\" 2см.",
+        "article": "2589039",
+        "current_code": "169778782223054",
+        "folder_found": "Код",
+        "new_code": "2589039",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/50d181e3-01bc-11f1-0a80-1ba7000cad6f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=50d178e4-01bc-11f1-0a80-1ba7000cad6c"
+        }
+    },
+    {
+        "id": "515aaa81-f6c0-11f0-0a80-1374000e252f",
+        "name": "Набор для создания пасхальной подвески \"Домик\"",
+        "article": "5017374",
+        "current_code": "169778782222666",
+        "folder_found": "Код",
+        "new_code": "5017374",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/515aaa81-f6c0-11f0-0a80-1374000e252f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=515aa073-f6c0-11f0-0a80-1374000e252c"
+        }
+    },
+    {
+        "id": "52caf1c7-fa7f-11f0-0a80-10990014c548",
+        "name": "Подставка пасхальная \"Цыплята\" на 6 яиц 21,5*19,9см.",
+        "article": "3715240",
+        "current_code": "169778782222742",
+        "folder_found": "Код",
+        "new_code": "3715240",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/52caf1c7-fa7f-11f0-0a80-10990014c548",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=52cae935-fa7f-11f0-0a80-10990014c545"
+        }
+    },
+    {
+        "id": "52f45d77-00f1-11f1-0a80-16570010e6c3",
+        "name": "Лента нагрудная \"Друг жениха\" 15см.",
+        "article": "583601",
+        "current_code": "169778782223006",
+        "folder_found": "Код",
+        "new_code": "583601",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/52f45d77-00f1-11f1-0a80-16570010e6c3",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=52f45399-00f1-11f1-0a80-16570010e6c0"
+        }
+    },
+    {
+        "id": "55dd6c8b-8645-11ef-0a80-178000178117",
+        "name": "Гирлянда на ленте \"До свидания, детский сад\" 330 см.",
+        "article": "1197037",
+        "current_code": "510228",
+        "folder_found": "Код",
+        "new_code": "1197037",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/55dd6c8b-8645-11ef-0a80-178000178117",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=55dd65aa-8645-11ef-0a80-178000178115"
+        }
+    },
+    {
+        "id": "570bc32a-8644-11ef-0a80-17800016e225",
+        "name": "Гирлянда на ленте \"Прощай школа\" 168 см.",
+        "article": "1197040",
+        "current_code": "510229",
+        "folder_found": "Код",
+        "new_code": "1197040",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/570bc32a-8644-11ef-0a80-17800016e225",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=570bb85e-8644-11ef-0a80-17800016e223"
+        }
+    },
+    {
+        "id": "580b959a-f83f-11f0-0a80-17ee0009f6f1",
+        "name": "Открытка № 354 мини \"ХВ\" 7х7см.",
+        "article": "1987354",
+        "current_code": "169778782222719",
+        "folder_found": "Код",
+        "new_code": "1987354",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/580b959a-f83f-11f0-0a80-17ee0009f6f1",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=580b8a91-f83f-11f0-0a80-17ee0009f6ee"
+        }
+    },
+    {
+        "id": "596acef0-8644-11ef-0a80-17800016e3af",
+        "name": "Лента атласная  Крестный отец,  мать набор 2 шт. 10*180 см",
+        "article": "1485878",
+        "current_code": "511250",
+        "folder_found": "Код",
+        "new_code": "1485878",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/596acef0-8644-11ef-0a80-17800016e3af",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=596ac450-8644-11ef-0a80-17800016e3ad"
+        }
+    },
+    {
+        "id": "5e75f80f-fc2f-11f0-0a80-061f001f1f00",
+        "name": "Пакет подарочный №263 \"Пасха\" 18х23х8см.",
+        "article": "1620263",
+        "current_code": "169778782222820",
+        "folder_found": "Код",
+        "new_code": "1620263",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/5e75f80f-fc2f-11f0-0a80-061f001f1f00",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=5e75eaf2-fc2f-11f0-0a80-061f001f1efd"
+        }
+    },
+    {
+        "id": "5fbee9f5-f845-11f0-0a80-0470000a4a74",
+        "name": "Подставка пасхальная на 1 яйцо \"Цветочная корзинка\" 11*13,5см.",
+        "article": "2704313",
+        "current_code": "169778782222727",
+        "folder_found": "Код",
+        "new_code": "2704313",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/5fbee9f5-f845-11f0-0a80-0470000a4a74",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=5fbed814-f845-11f0-0a80-0470000a4a71"
+        }
+    },
+    {
+        "id": "5ff5ccb8-8644-11ef-0a80-17800016e79b",
+        "name": "Значок \"Самый трезвый гость\"4,5см",
+        "article": "1212471",
+        "current_code": "505202",
+        "folder_found": "Код",
+        "new_code": "1212471",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/5ff5ccb8-8644-11ef-0a80-17800016e79b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=5ff5c0f5-8644-11ef-0a80-17800016e799"
+        }
+    },
+    {
+        "id": "603ad01f-00c8-11f1-0a80-1446000420fc",
+        "name": "Медаль-магнит \"Выпускник начальной школы\" Глобус 8,5*9,2см.",
+        "article": "2798174",
+        "current_code": "169778782222975",
+        "folder_found": "Код",
+        "new_code": "2798174",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/603ad01f-00c8-11f1-0a80-1446000420fc",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=603ab94d-00c8-11f1-0a80-1446000420f9"
+        }
+    },
+    {
+        "id": "63aea5ce-8645-11ef-0a80-17800017938d",
+        "name": "Орден \"Самый весёлый\" зелёный 7,5*12,5см.",
+        "article": "479007",
+        "current_code": "505205",
+        "folder_found": "Код",
+        "new_code": "479007",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/63aea5ce-8645-11ef-0a80-17800017938d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=63ae9f0e-8645-11ef-0a80-17800017938b"
+        }
+    },
+    {
+        "id": "63f8d99f-8644-11ef-0a80-17800016e9f0",
+        "name": "Лента атласная Победитель 10*180 см",
+        "article": "4371947",
+        "current_code": "511254",
+        "folder_found": "Код",
+        "new_code": "4371947",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/63f8d99f-8644-11ef-0a80-17800016e9f0",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=63f8d260-8644-11ef-0a80-17800016e9ee"
+        }
+    },
+    {
+        "id": "64f4e06d-f844-11f0-0a80-0470000a151d",
+        "name": "Подставка пасхальная на 1 яйцо \"Хохлома\" 15,7*21,2см.",
+        "article": "1695093",
+        "current_code": "169778782222725",
+        "folder_found": "Код",
+        "new_code": "1695093",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/64f4e06d-f844-11f0-0a80-0470000a151d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=64f4d5d7-f844-11f0-0a80-0470000a151a"
+        }
+    },
+    {
+        "id": "65c93cd0-0262-11f1-0a80-0bbd0004f05c",
+        "name": "Лента атласная 65 прекрасных лет 10*180 см",
+        "article": "60465",
+        "current_code": "169778782223089",
+        "folder_found": "Код",
+        "new_code": "60465",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/65c93cd0-0262-11f1-0a80-0bbd0004f05c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=65c931b8-0262-11f1-0a80-0bbd0004f059"
+        }
+    },
+    {
+        "id": "67b1d9c2-0261-11f1-0a80-195700049bc1",
+        "name": "Лента атласная Лучший в мире дедушка 10*180 см",
+        "article": "60564",
+        "current_code": "169778782223086",
+        "folder_found": "Код",
+        "new_code": "60564",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/67b1d9c2-0261-11f1-0a80-195700049bc1",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=67b1cfbb-0261-11f1-0a80-195700049bbe"
+        }
+    },
+    {
+        "id": "691a465f-01cc-11f1-0a80-0de8001000f4",
+        "name": "Талисман \"Моему ангелу\" дерево 3*6см.",
+        "article": "2605119",
+        "current_code": "169778782223073",
+        "folder_found": "Код",
+        "new_code": "2605119",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/691a465f-01cc-11f1-0a80-0de8001000f4",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=691a3981-01cc-11f1-0a80-0de8001000f1"
+        }
+    },
+    {
+        "id": "6961f3ff-00f6-11f1-0a80-0ede000f21ab",
+        "name": "Медаль на ленте \"С днём рождения\" 5,5см.",
+        "article": "53154",
+        "current_code": "169778782223017",
+        "folder_found": "Код",
+        "new_code": "53154",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/6961f3ff-00f6-11f1-0a80-0ede000f21ab",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=6961e8bd-00f6-11f1-0a80-0ede000f21a8"
+        }
+    },
+    {
+        "id": "6a3e064a-8644-11ef-0a80-17800016ed9c",
+        "name": "Открытка № 105 мини \"ХВ\" 7х7см.",
+        "article": "2878105",
+        "current_code": "506359",
+        "folder_found": "Код",
+        "new_code": "2878105",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/6a3e064a-8644-11ef-0a80-17800016ed9c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=6a3dfd8d-8644-11ef-0a80-17800016ed9a"
+        }
+    },
+    {
+        "id": "6b9ca270-8644-11ef-0a80-17800016ee46",
+        "name": "Плакат стенгазета Здравствуй осень 60*40 см",
+        "article": "1310369",
+        "current_code": "505088",
+        "folder_found": "Код",
+        "new_code": "1310369",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/6b9ca270-8644-11ef-0a80-17800016ee46",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=6b9c986f-8644-11ef-0a80-17800016ee44"
+        }
+    },
+    {
+        "id": "6bbaef22-00f7-11f1-0a80-0ede000f504d",
+        "name": "Медаль на ленте \"Юбилярша\" 5,5см.",
+        "article": "00021",
+        "current_code": "169778782223022",
+        "folder_found": "Код",
+        "new_code": "00021",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/6bbaef22-00f7-11f1-0a80-0ede000f504d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=6bbae470-00f7-11f1-0a80-0ede000f504a"
+        }
+    },
+    {
+        "id": "6e577e91-f842-11f0-0a80-1811000a6c77",
+        "name": "Открытка № 550 мини \"ХВ\" 10х7см.",
+        "article": "2889550",
+        "current_code": "169778782222721",
+        "folder_found": "Код",
+        "new_code": "2889550",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/6e577e91-f842-11f0-0a80-1811000a6c77",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=6e57707a-f842-11f0-0a80-1811000a6c74"
+        }
+    },
+    {
+        "id": "6e9e5440-8644-11ef-0a80-17800016f063",
+        "name": "Гирлянда на люверсах \"До свидания, садик\" 200 см.",
+        "article": "1643109",
+        "current_code": "510230",
+        "folder_found": "Код",
+        "new_code": "1643109",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/6e9e5440-8644-11ef-0a80-17800016f063",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=6e9e4a6e-8644-11ef-0a80-17800016f061"
+        }
+    },
+    {
+        "id": "6f2a8c54-f83e-11f0-0a80-1a9a0009800e",
+        "name": "Открытка № 104 мини \"ХВ\" 7х7см.",
+        "article": "2878104",
+        "current_code": "169778782222716",
+        "folder_found": "Код",
+        "new_code": "2878104",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/6f2a8c54-f83e-11f0-0a80-1a9a0009800e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=6f2a7fd3-f83e-11f0-0a80-1a9a0009800b"
+        }
+    },
+    {
+        "id": "720d8ed2-fc31-11f0-0a80-0483001fc9a7",
+        "name": "Пакет ламинированный №324 «Пасха» 12×15×5,5см.",
+        "article": "4596324",
+        "current_code": "169778782222827",
+        "folder_found": "Код",
+        "new_code": "4596324",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/720d8ed2-fc31-11f0-0a80-0483001fc9a7",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=720d810f-fc31-11f0-0a80-0483001fc9a4"
+        }
+    },
+    {
+        "id": "752d5364-025d-11f1-0a80-074b0003da53",
+        "name": "Лента атласная Почетная теща,тесть 10*180 см 2 шт",
+        "article": "47688",
+        "current_code": "169778782223082",
+        "folder_found": "Код",
+        "new_code": "47688",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/752d5364-025d-11f1-0a80-074b0003da53",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=752d483e-025d-11f1-0a80-074b0003da50"
+        }
+    },
+    {
+        "id": "75a11f8a-8645-11ef-0a80-17800017ad7f",
+        "name": "Значок \"Друг жениха\" 4,5см фиолетовый",
+        "article": "1592209",
+        "current_code": "505165",
+        "folder_found": "Код",
+        "new_code": "1592209",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/75a11f8a-8645-11ef-0a80-17800017ad7f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=75a117ed-8645-11ef-0a80-17800017ad7d"
+        }
+    },
+    {
+        "id": "769e6186-0251-11f1-0a80-1af200026b3b",
+        "name": "Лента атласная Свидетельница 10*190 см",
+        "article": "187391",
+        "current_code": "169778782223074",
+        "folder_found": "Код",
+        "new_code": "187391",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/769e6186-0251-11f1-0a80-1af200026b3b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=769e4c96-0251-11f1-0a80-1af200026b38"
+        }
+    },
+    {
+        "id": "779984e0-f6c3-11f0-0a80-1374000ebbd7",
+        "name": "Фреска с блестками и фольгой \"С Пасхой\"",
+        "article": "1526573",
+        "current_code": "169778782222669",
+        "folder_found": "Код",
+        "new_code": "1526573",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/779984e0-f6c3-11f0-0a80-1374000ebbd7",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=77997914-f6c3-11f0-0a80-1374000ebbd4"
+        }
+    },
+    {
+        "id": "79511bf7-8644-11ef-0a80-17800016f6c9",
+        "name": "Лента атласная  Именинник 10*180 см",
+        "article": "1315336",
+        "current_code": "511261",
+        "folder_found": "Код",
+        "new_code": "1315336",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/79511bf7-8644-11ef-0a80-17800016f6c9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=7951130f-8644-11ef-0a80-17800016f6c7"
+        }
+    },
+    {
+        "id": "7ec13d1a-0266-11f1-0a80-05e50005b397",
+        "name": "Набор обложка для паспорта Самой милой 12*15 см",
+        "article": "2583157",
+        "current_code": "169778782223092",
+        "folder_found": "Код",
+        "new_code": "2583157",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/7ec13d1a-0266-11f1-0a80-05e50005b397",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=7ec12e31-0266-11f1-0a80-05e50005b394"
+        }
+    },
+    {
+        "id": "7fbd3b7f-8643-11ef-0a80-17800016379a",
+        "name": "Монета в открытке \"Лучший охотник\" 2см.",
+        "article": "2765484",
+        "current_code": "506016",
+        "folder_found": "Код",
+        "new_code": "2765484",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/7fbd3b7f-8643-11ef-0a80-17800016379a",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=7fbd34ce-8643-11ef-0a80-178000163798"
+        }
+    },
+    {
+        "id": "801986d0-8643-11ef-0a80-1780001638c8",
+        "name": "Лента атласная Лучшая в мире мама 10*180 см",
+        "article": "60657",
+        "current_code": "511262",
+        "folder_found": "Код",
+        "new_code": "60657",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/801986d0-8643-11ef-0a80-1780001638c8",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=80197992-8643-11ef-0a80-1780001638c6"
+        }
+    },
+    {
+        "id": "818f5fab-8643-11ef-0a80-178000163b8b",
+        "name": "Медаль картон \"Любимой женщине\" 7,5см.",
+        "article": "233809",
+        "current_code": "505211",
+        "folder_found": "Код",
+        "new_code": "233809",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/818f5fab-8643-11ef-0a80-178000163b8b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=818f580c-8643-11ef-0a80-178000163b89"
+        }
+    },
+    {
+        "id": "81b55cb6-8643-11ef-0a80-178000163bae",
+        "name": "Гирлянда С днем учителя 210см",
+        "article": "2239865",
+        "current_code": "503953",
+        "folder_found": "Код",
+        "new_code": "2239865",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/81b55cb6-8643-11ef-0a80-178000163bae",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=81b5531f-8643-11ef-0a80-178000163bac"
+        }
+    },
+    {
+        "id": "829a09b8-8645-11ef-0a80-17800017bd2b",
+        "name": "Лента нагрудная \"Лучший директор\" 15см.",
+        "article": "58326",
+        "current_code": "505212",
+        "folder_found": "Код",
+        "new_code": "58326",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/829a09b8-8645-11ef-0a80-17800017bd2b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=829a01a6-8645-11ef-0a80-17800017bd29"
+        }
+    },
+    {
+        "id": "82a8e40a-fc2b-11f0-0a80-096b001e26ee",
+        "name": "Коробочка под яйцо 993 7*7см.",
+        "article": "1746993",
+        "current_code": "169778782222816",
+        "folder_found": "Код",
+        "new_code": "1746993",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/82a8e40a-fc2b-11f0-0a80-096b001e26ee",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=82a8da0c-fc2b-11f0-0a80-096b001e26eb"
+        }
+    },
+    {
+        "id": "8319857e-8644-11ef-0a80-17800016fdc4",
+        "name": "Стеклянная подставка на 8 яиц «Цветочная» 20,5×20,5см.",
+        "article": "4661708",
+        "current_code": "513795",
+        "folder_found": "Код",
+        "new_code": "4661708",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8319857e-8644-11ef-0a80-17800016fdc4",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=83197e17-8644-11ef-0a80-17800016fdc2"
+        }
+    },
+    {
+        "id": "8341bd1e-8643-11ef-0a80-178000163e5e",
+        "name": "Медаль-магнит \"За рождение сына\" 8,5*9,2см.",
+        "article": "163083",
+        "current_code": "505215",
+        "folder_found": "Код",
+        "new_code": "163083",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8341bd1e-8643-11ef-0a80-178000163e5e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=8341b578-8643-11ef-0a80-178000163e5b"
+        }
+    },
+    {
+        "id": "83f4a6ed-fc29-11f0-0a80-0483001e1809",
+        "name": "Коробочка под яйцо 991 7*7см.",
+        "article": "1746991",
+        "current_code": "169778782222810",
+        "folder_found": "Код",
+        "new_code": "1746991",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/83f4a6ed-fc29-11f0-0a80-0483001e1809",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=83f49011-fc29-11f0-0a80-0483001e1806"
+        }
+    },
+    {
+        "id": "84bb6b29-00f1-11f1-0a80-05db000dff1e",
+        "name": "Лента нагрудная \"Подруга невесты\" 15см.",
+        "article": "583602",
+        "current_code": "169778782223007",
+        "folder_found": "Код",
+        "new_code": "583602",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/84bb6b29-00f1-11f1-0a80-05db000dff1e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=84bb5daf-00f1-11f1-0a80-05db000dff1b"
+        }
+    },
+    {
+        "id": "84c70b80-fc2f-11f0-0a80-05280020b0a8",
+        "name": "Пакет подарочный №334 \"Пасха\" 18х23х8см.",
+        "article": "4596334",
+        "current_code": "169778782222821",
+        "folder_found": "Код",
+        "new_code": "4596334",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/84c70b80-fc2f-11f0-0a80-05280020b0a8",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=84c70274-fc2f-11f0-0a80-05280020b0a5"
+        }
+    },
+    {
+        "id": "85f1d61e-8643-11ef-0a80-1780001642d3",
+        "name": "Монета в открытке \"Близнецы\" 2,5см.",
+        "article": "3516463",
+        "current_code": "506018",
+        "folder_found": "Код",
+        "new_code": "3516463",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/85f1d61e-8643-11ef-0a80-1780001642d3",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=85f1ca93-8643-11ef-0a80-1780001642d1"
+        }
+    },
+    {
+        "id": "8607eecf-8643-11ef-0a80-1780001642e7",
+        "name": "Медаль \"Стеклянная свадьба 15 лет\" металл 7 см.",
+        "article": "673510",
+        "current_code": "505217",
+        "folder_found": "Код",
+        "new_code": "673510",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8607eecf-8643-11ef-0a80-1780001642e7",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=8607e395-8643-11ef-0a80-1780001642e5"
+        }
+    },
+    {
+        "id": "8767574d-00dd-11f1-0a80-09760008b543",
+        "name": "Набор для поздравления \"Мы Вас любим \"",
+        "article": "1311595",
+        "current_code": "169778782222983",
+        "folder_found": "Код",
+        "new_code": "1311595",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8767574d-00dd-11f1-0a80-09760008b543",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=876749ec-00dd-11f1-0a80-09760008b540"
+        }
+    },
+    {
+        "id": "8808fa04-8644-11ef-0a80-178000170138",
+        "name": "Орден \"С днём рождения меня\" красный 7,5*12,5см.",
+        "article": "1211854",
+        "current_code": "505218",
+        "folder_found": "Код",
+        "new_code": "1211854",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8808fa04-8644-11ef-0a80-178000170138",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=8808eeef-8644-11ef-0a80-178000170136"
+        }
+    },
+    {
+        "id": "8857ce9a-8643-11ef-0a80-178000164512",
+        "name": "Лента нагрудная \"Мировой тесть\" 15см.",
+        "article": "583605",
+        "current_code": "511263",
+        "folder_found": "Код",
+        "new_code": "583605",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8857ce9a-8643-11ef-0a80-178000164512",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=8857c42f-8643-11ef-0a80-178000164510"
+        }
+    },
+    {
+        "id": "8a3c9e14-8643-11ef-0a80-178000164674",
+        "name": "Набор обложка для паспорта и ручка Папе 15*17,5 см",
+        "article": "1435128",
+        "current_code": "507701",
+        "folder_found": "Код",
+        "new_code": "1435128",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8a3c9e14-8643-11ef-0a80-178000164674",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=8a3c9600-8643-11ef-0a80-178000164672"
+        }
+    },
+    {
+        "id": "8a631750-f84d-11f0-0a80-1095000cca57",
+        "name": "Подставка пасхальная на 4 яйца \"Вышивка\" 18,4*18,4см.",
+        "article": "1761485",
+        "current_code": "169778782222732",
+        "folder_found": "Код",
+        "new_code": "1761485",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8a631750-f84d-11f0-0a80-1095000cca57",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=8a630ce4-f84d-11f0-0a80-1095000cca54"
+        }
+    },
+    {
+        "id": "8b254178-fc2a-11f0-0a80-1818001e4ab1",
+        "name": "Коробочка под яйцо 992 7*7см.",
+        "article": "1746992",
+        "current_code": "169778782222813",
+        "folder_found": "Код",
+        "new_code": "1746992",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8b254178-fc2a-11f0-0a80-1818001e4ab1",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=8b2534b6-fc2a-11f0-0a80-1818001e4aae"
+        }
+    },
+    {
+        "id": "8ddc5599-8645-11ef-0a80-17800017d121",
+        "name": "Магнит \"Самая красивая\" 7,7*9,4см.",
+        "article": "1099035",
+        "current_code": "511007",
+        "folder_found": "Код",
+        "new_code": "1099035",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/8ddc5599-8645-11ef-0a80-17800017d121",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=8ddc4dd7-8645-11ef-0a80-17800017d11f"
+        }
+    },
+    {
+        "id": "9005e805-8645-11ef-0a80-17800017d258",
+        "name": "Медаль-магнит \"Любимая жена\" 8,5*9,2см.",
+        "article": "122965",
+        "current_code": "505223",
+        "folder_found": "Код",
+        "new_code": "122965",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9005e805-8645-11ef-0a80-17800017d258",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9005deb9-8645-11ef-0a80-17800017d256"
+        }
+    },
+    {
+        "id": "90155700-01bc-11f1-0a80-00cc000ba763",
+        "name": "Монета в открытке \"На удачу\" 2см.",
+        "article": "3132051",
+        "current_code": "169778782223055",
+        "folder_found": "Код",
+        "new_code": "3132051",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/90155700-01bc-11f1-0a80-00cc000ba763",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9015496c-01bc-11f1-0a80-00cc000ba760"
+        }
+    },
+    {
+        "id": "905c5a21-8645-11ef-0a80-17800017d285",
+        "name": "Значок-розетка \"С днем рождения\" 9см.",
+        "article": "840760",
+        "current_code": "505224",
+        "folder_found": "Код",
+        "new_code": "840760",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/905c5a21-8645-11ef-0a80-17800017d285",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=905c505d-8645-11ef-0a80-17800017d283"
+        }
+    },
+    {
+        "id": "90d4a2b4-8645-11ef-0a80-17800017d2c6",
+        "name": "Лента атласная Девичник 10*185 см",
+        "article": "62124",
+        "current_code": "511271",
+        "folder_found": "Код",
+        "new_code": "62124",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/90d4a2b4-8645-11ef-0a80-17800017d2c6",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=90d497f3-8645-11ef-0a80-17800017d2c4"
+        }
+    },
+    {
+        "id": "9125c91e-8643-11ef-0a80-178000164c4d",
+        "name": "Медаль-магнит \"Невесте за красоту\" 8,5*9,2см.",
+        "article": "1500587",
+        "current_code": "505226",
+        "folder_found": "Код",
+        "new_code": "1500587",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9125c91e-8643-11ef-0a80-178000164c4d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9125bfb1-8643-11ef-0a80-178000164c4b"
+        }
+    },
+    {
+        "id": "918730a1-00d7-11f1-0a80-04f10008396e",
+        "name": "Медаль картон \"Свекор\" 11*8см.",
+        "article": "29908",
+        "current_code": "169778782222980",
+        "folder_found": "Код",
+        "new_code": "29908",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/918730a1-00d7-11f1-0a80-04f10008396e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=91872577-00d7-11f1-0a80-04f10008396b"
+        }
+    },
+    {
+        "id": "918a98f1-8643-11ef-0a80-178000164c9d",
+        "name": "Фигура на подставке дерево \"Выпускник\" 10*10*5см.",
+        "article": "1836948",
+        "current_code": "505141",
+        "folder_found": "Код",
+        "new_code": "1836948",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/918a98f1-8643-11ef-0a80-178000164c9d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=918a9028-8643-11ef-0a80-178000164c9b"
+        }
+    },
+    {
+        "id": "92b51a13-00f6-11f1-0a80-0bb4000f44a5",
+        "name": "Медаль на ленте \"Славный тесть\" 5,5см.",
+        "article": "53227",
+        "current_code": "169778782223018",
+        "folder_found": "Код",
+        "new_code": "53227",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/92b51a13-00f6-11f1-0a80-0bb4000f44a5",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=92b51127-00f6-11f1-0a80-0bb4000f44a2"
+        }
+    },
+    {
+        "id": "937bd6fa-8643-11ef-0a80-178000164e2c",
+        "name": "Наклейки для яиц \"Страна монстриков\"",
+        "article": "1565869",
+        "current_code": "504818",
+        "folder_found": "Код",
+        "new_code": "1565869",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/937bd6fa-8643-11ef-0a80-178000164e2c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=937bcb31-8643-11ef-0a80-178000164e2a"
+        }
+    },
+    {
+        "id": "9473decb-0262-11f1-0a80-0fdc00050771",
+        "name": "Лента атласная 70 красивых лет 10*180 см",
+        "article": "60472",
+        "current_code": "169778782223090",
+        "folder_found": "Код",
+        "new_code": "60472",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9473decb-0262-11f1-0a80-0fdc00050771",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9473d0a6-0262-11f1-0a80-0fdc0005076e"
+        }
+    },
+    {
+        "id": "94a589a5-fb7b-11f0-0a80-0b9400105c45",
+        "name": "Подвески \"Набор Пасхальный -2\" 3шт. 5*3,7см.",
+        "article": "1828101",
+        "current_code": "169778782222774",
+        "folder_found": "Код",
+        "new_code": "1828101",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/94a589a5-fb7b-11f0-0a80-0b9400105c45",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=94a58231-fb7b-11f0-0a80-0b9400105c42"
+        }
+    },
+    {
+        "id": "94e7341b-fc32-11f0-0a80-0ecf0021257a",
+        "name": "Пакет подарочный №252 \"Пасха\" 11х14х5см.",
+        "article": "1620252",
+        "current_code": "169778782222832",
+        "folder_found": "Код",
+        "new_code": "1620252",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/94e7341b-fc32-11f0-0a80-0ecf0021257a",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=94e72be4-fc32-11f0-0a80-0ecf00212577"
+        }
+    },
+    {
+        "id": "9549ec90-f845-11f0-0a80-1508000acf22",
+        "name": "Подставка пасхальная на 1 яйцо \"Петушок\" 16*11см.",
+        "article": "2704312",
+        "current_code": "169778782222728",
+        "folder_found": "Код",
+        "new_code": "2704312",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9549ec90-f845-11f0-0a80-1508000acf22",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9549e0cf-f845-11f0-0a80-1508000acf1f"
+        }
+    },
+    {
+        "id": "957391b4-8643-11ef-0a80-178000164f66",
+        "name": "Лента атласная Директор синий 10*180 см",
+        "article": "45424",
+        "current_code": "511276",
+        "folder_found": "Код",
+        "new_code": "45424",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/957391b4-8643-11ef-0a80-178000164f66",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=95738780-8643-11ef-0a80-178000164f64"
+        }
+    },
+    {
+        "id": "975fac93-025e-11f1-0a80-064000044909",
+        "name": "Лента атласная Почетная свекровь,свекор 10*180 см 2 шт",
+        "article": "47671",
+        "current_code": "169778782223084",
+        "folder_found": "Код",
+        "new_code": "47671",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/975fac93-025e-11f1-0a80-064000044909",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=975f9abd-025e-11f1-0a80-064000044906"
+        }
+    },
+    {
+        "id": "97c16529-f6c6-11f0-0a80-03eb000ee729",
+        "name": "Набор для декорирования пасхальных яиц №7",
+        "article": "2705991",
+        "current_code": "169778782222671",
+        "folder_found": "Код",
+        "new_code": "2705991",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/97c16529-f6c6-11f0-0a80-03eb000ee729",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=97c15a7f-f6c6-11f0-0a80-03eb000ee726"
+        }
+    },
+    {
+        "id": "97e2e2fc-8643-11ef-0a80-17800016514b",
+        "name": "Медаль фанера \"Лучший свидетель\" 9см.",
+        "article": "163122",
+        "current_code": "505228",
+        "folder_found": "Код",
+        "new_code": "163122",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/97e2e2fc-8643-11ef-0a80-17800016514b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=97e2d1df-8643-11ef-0a80-178000165149"
+        }
+    },
+    {
+        "id": "982b78e2-8643-11ef-0a80-178000165182",
+        "name": "Медаль на ленте \"Лучший брат\" 5,5см.",
+        "article": "4105192",
+        "current_code": "505229",
+        "folder_found": "Код",
+        "new_code": "4105192",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/982b78e2-8643-11ef-0a80-178000165182",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=982b6ea6-8643-11ef-0a80-178000165180"
+        }
+    },
+    {
+        "id": "988964d6-8643-11ef-0a80-1780001651c3",
+        "name": "Медаль металл \"Деревянная свадьба 5 лет\" 4см.",
+        "article": "1997288",
+        "current_code": "505230",
+        "folder_found": "Код",
+        "new_code": "1997288",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/988964d6-8643-11ef-0a80-1780001651c3",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=98895cbe-8643-11ef-0a80-1780001651c1"
+        }
+    },
+    {
+        "id": "99bc98e3-f6d0-11f0-0a80-0c5900119a8a",
+        "name": "Вышивка подставка для чашки \"Фантазия\" 11*14см.",
+        "article": "8214",
+        "current_code": "169778782222674",
+        "folder_found": "Код",
+        "new_code": "8214",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/99bc98e3-f6d0-11f0-0a80-0c5900119a8a",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=99bc9209-f6d0-11f0-0a80-0c5900119a87"
+        }
+    },
+    {
+        "id": "9a976140-8645-11ef-0a80-17800017dae6",
+        "name": "Трубочки \"Череп-1\"на блистере 21см. 6шт.",
+        "article": "302158",
+        "current_code": "511940",
+        "folder_found": "Код",
+        "new_code": "302158",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9a976140-8645-11ef-0a80-17800017dae6",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9a9754ab-8645-11ef-0a80-17800017dae4"
+        }
+    },
+    {
+        "id": "9cdd97e2-8643-11ef-0a80-1780001654ff",
+        "name": "Набор для создания пасхальной подвески 2шт. \"Цветочки\"",
+        "article": "5017371",
+        "current_code": "513799",
+        "folder_found": "Код",
+        "new_code": "5017371",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9cdd97e2-8643-11ef-0a80-1780001654ff",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9cdd7572-8643-11ef-0a80-1780001654fd"
+        }
+    },
+    {
+        "id": "9d794906-8643-11ef-0a80-17800016557b",
+        "name": "Подставка пасхальная \"ХВ\" на 8 яиц 24*25см.",
+        "article": "1653890",
+        "current_code": "506400",
+        "folder_found": "Код",
+        "new_code": "1653890",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9d794906-8643-11ef-0a80-17800016557b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9d793f7d-8643-11ef-0a80-178000165579"
+        }
+    },
+    {
+        "id": "9f413b08-8644-11ef-0a80-178000170d81",
+        "name": "Набор для поздравления \"Любимому учителю\"",
+        "article": "1311593",
+        "current_code": "510238",
+        "folder_found": "Код",
+        "new_code": "1311593",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9f413b08-8644-11ef-0a80-178000170d81",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9f412faa-8644-11ef-0a80-178000170d7f"
+        }
+    },
+    {
+        "id": "9f6cb6c5-fc31-11f0-0a80-0c68001f65a2",
+        "name": "Пакет ламинированный №348 «Пасха» 12×15×5,5см.",
+        "article": "3681348",
+        "current_code": "169778782222828",
+        "folder_found": "Код",
+        "new_code": "3681348",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9f6cb6c5-fc31-11f0-0a80-0c68001f65a2",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9f6cae3c-fc31-11f0-0a80-0c68001f659f"
+        }
+    },
+    {
+        "id": "9f7ca301-00f5-11f1-0a80-0de2000fb12c",
+        "name": "Медаль на ленте \"Лучший в мире брат\" 5,5см.",
+        "article": "53093",
+        "current_code": "169778782223013",
+        "folder_found": "Код",
+        "new_code": "53093",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/9f7ca301-00f5-11f1-0a80-0de2000fb12c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=9f7c97cb-00f5-11f1-0a80-0de2000fb129"
+        }
+    },
+    {
+        "id": "a0833e91-8644-11ef-0a80-178000170e26",
+        "name": "Значок \"Самый юнный гость\" 4,5см.",
+        "article": "1212449",
+        "current_code": "505231",
+        "folder_found": "Код",
+        "new_code": "1212449",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a0833e91-8644-11ef-0a80-178000170e26",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a083354e-8644-11ef-0a80-178000170e24"
+        }
+    },
+    {
+        "id": "a23d0666-f83e-11f0-0a80-17ee0009d508",
+        "name": "Открытка № 356 мини \"ХВ\" 7х7см.",
+        "article": "1987356",
+        "current_code": "169778782222717",
+        "folder_found": "Код",
+        "new_code": "1987356",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a23d0666-f83e-11f0-0a80-17ee0009d508",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a23cfaeb-f83e-11f0-0a80-17ee0009d505"
+        }
+    },
+    {
+        "id": "a2939eb9-8643-11ef-0a80-17800016597d",
+        "name": "Медаль-магнит \"За примерное поведение\" 8,5*9,2см.",
+        "article": "1500566",
+        "current_code": "505232",
+        "folder_found": "Код",
+        "new_code": "1500566",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a2939eb9-8643-11ef-0a80-17800016597d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a29396fd-8643-11ef-0a80-17800016597b"
+        }
+    },
+    {
+        "id": "a2ab5f75-fc2f-11f0-0a80-05280020b7c3",
+        "name": "Пакет подарочный №261 \"Пасха\" 18х23х8см.",
+        "article": "1620261",
+        "current_code": "169778782222822",
+        "folder_found": "Код",
+        "new_code": "1620261",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a2ab5f75-fc2f-11f0-0a80-05280020b7c3",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a2ab57b6-fc2f-11f0-0a80-05280020b7c0"
+        }
+    },
+    {
+        "id": "a3f68485-8645-11ef-0a80-17800017e22e",
+        "name": "Набор  Золотая осень 45*35 см",
+        "article": "09728",
+        "current_code": "505097",
+        "folder_found": "Код",
+        "new_code": "09728",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a3f68485-8645-11ef-0a80-17800017e22e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a3f67ad0-8645-11ef-0a80-17800017e22c"
+        }
+    },
+    {
+        "id": "a457c7c4-8644-11ef-0a80-178000171047",
+        "name": "Ручка подарочная с блокнотом 16*9 см",
+        "article": "1133025",
+        "current_code": "507703",
+        "folder_found": "Код",
+        "new_code": "1133025",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a457c7c4-8644-11ef-0a80-178000171047",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a457bc78-8644-11ef-0a80-178000171045"
+        }
+    },
+    {
+        "id": "a4e60403-00f4-11f1-0a80-0c7100114b63",
+        "name": "Медаль на ленте \"Лучшая сестра\" 5,5см.",
+        "article": "4105190",
+        "current_code": "169778782223011",
+        "folder_found": "Код",
+        "new_code": "4105190",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a4e60403-00f4-11f1-0a80-0c7100114b63",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a4e5fe22-00f4-11f1-0a80-0c7100114b60"
+        }
+    },
+    {
+        "id": "a5f32332-8644-11ef-0a80-1780001711b0",
+        "name": "Диплом фоторамка Здравствуй школа",
+        "article": "1371903",
+        "current_code": "505098",
+        "folder_found": "Код",
+        "new_code": "1371903",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a5f32332-8644-11ef-0a80-1780001711b0",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a5f31939-8644-11ef-0a80-1780001711ae"
+        }
+    },
+    {
+        "id": "a635f533-f842-11f0-0a80-14ae000a6979",
+        "name": "Открытка № 533 мини \"ХВ\" 10х7см.",
+        "article": "2889533",
+        "current_code": "169778782222722",
+        "folder_found": "Код",
+        "new_code": "2889533",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/a635f533-f842-11f0-0a80-14ae000a6979",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=a635e44e-f842-11f0-0a80-14ae000a6976"
+        }
+    },
+    {
+        "id": "aa25cef3-8644-11ef-0a80-178000171415",
+        "name": "Вышивка подставка для чашки \"Дары леса\" 11*14см.",
+        "article": "8212",
+        "current_code": "507344",
+        "folder_found": "Код",
+        "new_code": "8212",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/aa25cef3-8644-11ef-0a80-178000171415",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=aa25c57d-8644-11ef-0a80-178000171413"
+        }
+    },
+    {
+        "id": "aaaa6419-00f0-11f1-0a80-0634000fa280",
+        "name": "Лента нагрудная \"Мировой тёща\" 15см.",
+        "article": "583606",
+        "current_code": "169778782223003",
+        "folder_found": "Код",
+        "new_code": "583606",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/aaaa6419-00f0-11f1-0a80-0634000fa280",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=aaaa4eb5-00f0-11f1-0a80-0634000fa27d"
+        }
+    },
+    {
+        "id": "abb76b62-8643-11ef-0a80-178000165fd4",
+        "name": "Подставка пасхальная \"ХВ\" на 12 яиц 30*30см.",
+        "article": "1653909",
+        "current_code": "506402",
+        "folder_found": "Код",
+        "new_code": "1653909",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/abb76b62-8643-11ef-0a80-178000165fd4",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=abb7636a-8643-11ef-0a80-178000165fd2"
+        }
+    },
+    {
+        "id": "acf8dac7-8643-11ef-0a80-1780001660dd",
+        "name": "Орден \"Почетный гость\" синий 7,5*12,5см.",
+        "article": "479000",
+        "current_code": "505235",
+        "folder_found": "Код",
+        "new_code": "479000",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/acf8dac7-8643-11ef-0a80-1780001660dd",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=acf8d118-8643-11ef-0a80-1780001660db"
+        }
+    },
+    {
+        "id": "b0324844-8644-11ef-0a80-178000171719",
+        "name": "Подставка под яйцо фигурная \"Цветок\" 10см. бирюза",
+        "article": "867697",
+        "current_code": "507854",
+        "folder_found": "Код",
+        "new_code": "867697",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b0324844-8644-11ef-0a80-178000171719",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b0323de5-8644-11ef-0a80-178000171717"
+        }
+    },
+    {
+        "id": "b23212aa-f84c-11f0-0a80-1a9a000c3e24",
+        "name": "Подставка пасхальная на 4 яйца \"Цветы\" 18,4*18,4см.",
+        "article": "1761483",
+        "current_code": "169778782222731",
+        "folder_found": "Код",
+        "new_code": "1761483",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b23212aa-f84c-11f0-0a80-1a9a000c3e24",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b2320529-f84c-11f0-0a80-1a9a000c3e21"
+        }
+    },
+    {
+        "id": "b282835c-8643-11ef-0a80-17800016657b",
+        "name": "Медаль спортивная \"3 место\" металл 5см. бронза",
+        "article": "1040400",
+        "current_code": "505240",
+        "folder_found": "Код",
+        "new_code": "1040400",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b282835c-8643-11ef-0a80-17800016657b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b2827b48-8643-11ef-0a80-178000166579"
+        }
+    },
+    {
+        "id": "b3e23274-0100-11f1-0a80-0de200124072",
+        "name": "Значок \"Друг жениха 4,5см белый",
+        "article": "159207",
+        "current_code": "169778782223024",
+        "folder_found": "Код",
+        "new_code": "159207",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b3e23274-0100-11f1-0a80-0de200124072",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b3e228af-0100-11f1-0a80-0de20012406f"
+        }
+    },
+    {
+        "id": "b44cb1ea-8643-11ef-0a80-1780001666ef",
+        "name": "Слиток сувенирный \"Юбилейный\" 1,5*3см.",
+        "article": "182397",
+        "current_code": "506022",
+        "folder_found": "Код",
+        "new_code": "182397",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b44cb1ea-8643-11ef-0a80-1780001666ef",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b44caa83-8643-11ef-0a80-1780001666ed"
+        }
+    },
+    {
+        "id": "b4cb02c4-8644-11ef-0a80-178000171935",
+        "name": "Набор блокнот и ручка Звездные войны 11*15 см",
+        "article": "1600551",
+        "current_code": "507704",
+        "folder_found": "Код",
+        "new_code": "1600551",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b4cb02c4-8644-11ef-0a80-178000171935",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b4cafb1f-8644-11ef-0a80-178000171933"
+        }
+    },
+    {
+        "id": "b85a9f67-8644-11ef-0a80-178000171b05",
+        "name": "Орден \"Принцесса\" малиновый  7,5*12,5см.",
+        "article": "479028",
+        "current_code": "505242",
+        "folder_found": "Код",
+        "new_code": "479028",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b85a9f67-8644-11ef-0a80-178000171b05",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b85a9574-8644-11ef-0a80-178000171b03"
+        }
+    },
+    {
+        "id": "b898eb1c-fc32-11f0-0a80-0b9400217980",
+        "name": "Пакет подарочный №260 \"Пасха\" 11х14х5см.",
+        "article": "1620260",
+        "current_code": "169778782222833",
+        "folder_found": "Код",
+        "new_code": "1620260",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b898eb1c-fc32-11f0-0a80-0b9400217980",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b898e1f0-fc32-11f0-0a80-0b940021797d"
+        }
+    },
+    {
+        "id": "b9d990be-8643-11ef-0a80-178000166b0b",
+        "name": "Медаль \"С днем свадьбы, любимые родители\" металл 6*6,5 см.",
+        "article": "2457822",
+        "current_code": "505243",
+        "folder_found": "Код",
+        "new_code": "2457822",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/b9d990be-8643-11ef-0a80-178000166b0b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=b9d98700-8643-11ef-0a80-178000166b09"
+        }
+    },
+    {
+        "id": "bd36a75d-8645-11ef-0a80-17800017ef79",
+        "name": "Орден \"Лучшая воспитательница\" белый 7,5*12,5см.",
+        "article": "1211849",
+        "current_code": "505245",
+        "folder_found": "Код",
+        "new_code": "1211849",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/bd36a75d-8645-11ef-0a80-17800017ef79",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=bd369b7b-8645-11ef-0a80-17800017ef77"
+        }
+    },
+    {
+        "id": "be8d5dd9-fc2f-11f0-0a80-1aaa001f0ade",
+        "name": "Пакет подарочный №673 \"Пасха\" 18х23х8см.",
+        "article": "1204673",
+        "current_code": "169778782222823",
+        "folder_found": "Код",
+        "new_code": "1204673",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/be8d5dd9-fc2f-11f0-0a80-1aaa001f0ade",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=be8d5350-fc2f-11f0-0a80-1aaa001f0adb"
+        }
+    },
+    {
+        "id": "bf5e50f6-f6bf-11f0-0a80-1374000dfa2d",
+        "name": "Набор для создания пасхальной подвески 2шт. \"Овечки\"",
+        "article": "5017372",
+        "current_code": "169778782222665",
+        "folder_found": "Код",
+        "new_code": "5017372",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/bf5e50f6-f6bf-11f0-0a80-1374000dfa2d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=bf5e4523-f6bf-11f0-0a80-1374000dfa2a"
+        }
+    },
+    {
+        "id": "c1d27d48-01b2-11f1-0a80-063c00099f75",
+        "name": "Фигура на подставке дерево \"Золотой учитель\" 9,3*10,4см.",
+        "article": "1306670",
+        "current_code": "169778782223050",
+        "folder_found": "Код",
+        "new_code": "1306670",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c1d27d48-01b2-11f1-0a80-063c00099f75",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c1d27097-01b2-11f1-0a80-063c00099f72"
+        }
+    },
+    {
+        "id": "c22467c9-8643-11ef-0a80-17800016711f",
+        "name": "Пакет подарочный \"Гжель\" 10х19х7см.",
+        "article": "1620268",
+        "current_code": "506362",
+        "folder_found": "Код",
+        "new_code": "1620268",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c22467c9-8643-11ef-0a80-17800016711f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c2245e9c-8643-11ef-0a80-17800016711d"
+        }
+    },
+    {
+        "id": "c3153be4-fa84-11f0-0a80-1b320015dc12",
+        "name": "Подставка пасхальная \"Храм\" на 3 яйца 17,4*20см.",
+        "article": "1253100",
+        "current_code": "169778782222744",
+        "folder_found": "Код",
+        "new_code": "1253100",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c3153be4-fa84-11f0-0a80-1b320015dc12",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c315334f-fa84-11f0-0a80-1b320015dc0f"
+        }
+    },
+    {
+        "id": "c3cc45bb-8645-11ef-0a80-17800017f288",
+        "name": "Пакет подарочный \"Пасха\" 10х19х7см.",
+        "article": "1620270",
+        "current_code": "506363",
+        "folder_found": "Код",
+        "new_code": "1620270",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c3cc45bb-8645-11ef-0a80-17800017f288",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c3cc3c1b-8645-11ef-0a80-17800017f286"
+        }
+    },
+    {
+        "id": "c3d08fea-01bb-11f1-0a80-084e000b5b55",
+        "name": "Монета в открытке \"Лучший бухгалтер\" 2см.",
+        "article": "2765493",
+        "current_code": "169778782223052",
+        "folder_found": "Код",
+        "new_code": "2765493",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c3d08fea-01bb-11f1-0a80-084e000b5b55",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c3d07e71-01bb-11f1-0a80-084e000b5b52"
+        }
+    },
+    {
+        "id": "c45b8a87-0267-11f1-0a80-00d100061876",
+        "name": "Набор обложка для паспорта и ручка Дедушке 15*17,5 см",
+        "article": "1435129",
+        "current_code": "169778782223094",
+        "folder_found": "Код",
+        "new_code": "1435129",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c45b8a87-0267-11f1-0a80-00d100061876",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c45b7d7e-0267-11f1-0a80-00d100061873"
+        }
+    },
+    {
+        "id": "c4b90554-01cb-11f1-0a80-0328000f7840",
+        "name": "Талисман \"Исполнение желаний\" дерево 3*6см.",
+        "article": "2605122",
+        "current_code": "169778782223070",
+        "folder_found": "Код",
+        "new_code": "2605122",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c4b90554-01cb-11f1-0a80-0328000f7840",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c4b8fcdf-01cb-11f1-0a80-0328000f783d"
+        }
+    },
+    {
+        "id": "c4fee947-8643-11ef-0a80-17800016730f",
+        "name": "Пакет подарочный №332 \"Пасха\" 18х23х8см.",
+        "article": "4596332",
+        "current_code": "506364",
+        "folder_found": "Код",
+        "new_code": "4596332",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c4fee947-8643-11ef-0a80-17800016730f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c4fee1df-8643-11ef-0a80-17800016730d"
+        }
+    },
+    {
+        "id": "c4ffa288-8644-11ef-0a80-178000172215",
+        "name": "Медаль на ленте \"Выпускник детского сада\" 7,6 см.",
+        "article": "2765468",
+        "current_code": "510241",
+        "folder_found": "Код",
+        "new_code": "2765468",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c4ffa288-8644-11ef-0a80-178000172215",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c4ff99f9-8644-11ef-0a80-178000172213"
+        }
+    },
+    {
+        "id": "c6a6208a-01a6-11f1-0a80-03280007c7e8",
+        "name": "Медаль металл \"С юбилеем свадьбы\" 4см.",
+        "article": "1997283",
+        "current_code": "169778782223044",
+        "folder_found": "Код",
+        "new_code": "1997283",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c6a6208a-01a6-11f1-0a80-03280007c7e8",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c6a617de-01a6-11f1-0a80-03280007c7e5"
+        }
+    },
+    {
+        "id": "c6ec1fb7-00f6-11f1-0a80-06340010ec8f",
+        "name": "Медаль на ленте \"Именинник\" 5,5см.",
+        "article": "00042",
+        "current_code": "169778782223019",
+        "folder_found": "Код",
+        "new_code": "00042",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c6ec1fb7-00f6-11f1-0a80-06340010ec8f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c6ec1497-00f6-11f1-0a80-06340010ec8c"
+        }
+    },
+    {
+        "id": "c7bab568-0275-11f1-0a80-05e500097995",
+        "name": "Набор Здравствуй,осень 45*35 см",
+        "article": "0979",
+        "current_code": "169778782223099",
+        "folder_found": "Код",
+        "new_code": "0979",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c7bab568-0275-11f1-0a80-05e500097995",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c7baaa2e-0275-11f1-0a80-05e500097992"
+        }
+    },
+    {
+        "id": "c94f743c-8644-11ef-0a80-178000172469",
+        "name": "Медаль картон \"С рождением малыша\" 9см.",
+        "article": "1500717",
+        "current_code": "505250",
+        "folder_found": "Код",
+        "new_code": "1500717",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c94f743c-8644-11ef-0a80-178000172469",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c94f6bb7-8644-11ef-0a80-178000172467"
+        }
+    },
+    {
+        "id": "c97226c7-0266-11f1-0a80-1c330005c0c2",
+        "name": "Набор обложка для паспорта 100 % мужик 12*15см",
+        "article": "1297884",
+        "current_code": "169778782223093",
+        "folder_found": "Код",
+        "new_code": "1297884",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c97226c7-0266-11f1-0a80-1c330005c0c2",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c9721651-0266-11f1-0a80-1c330005c0bf"
+        }
+    },
+    {
+        "id": "c9f69e18-f6c0-11f0-0a80-0e8e000e0429",
+        "name": "Набор для создания пасхальной подвески \"Яички в цветочках\"",
+        "article": "5017373",
+        "current_code": "169778782222667",
+        "folder_found": "Код",
+        "new_code": "5017373",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/c9f69e18-f6c0-11f0-0a80-0e8e000e0429",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=c9f694f2-f6c0-11f0-0a80-0e8e000e0426"
+        }
+    },
+    {
+        "id": "cafd7845-f842-11f0-0a80-09c6000a37b9",
+        "name": "Открытка № 530 мини \"ХВ\" 10х7см.",
+        "article": "2889530",
+        "current_code": "169778782222723",
+        "folder_found": "Код",
+        "new_code": "2889530",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/cafd7845-f842-11f0-0a80-09c6000a37b9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=cafd6a2c-f842-11f0-0a80-09c6000a37b6"
+        }
+    },
+    {
+        "id": "cb172c87-8643-11ef-0a80-1780001677d9",
+        "name": "Медаль-магнит \"Выпускник детского сада\" Гном 8,5*9,2см.",
+        "article": "2798169",
+        "current_code": "510244",
+        "folder_found": "Код",
+        "new_code": "2798169",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/cb172c87-8643-11ef-0a80-1780001677d9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=cb172368-8643-11ef-0a80-1780001677d7"
+        }
+    },
+    {
+        "id": "cb806f2e-8643-11ef-0a80-17800016782e",
+        "name": "Магнит \"Любимая жена\" 6,8*9,5см.",
+        "article": "886313",
+        "current_code": "511017",
+        "folder_found": "Код",
+        "new_code": "886313",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/cb806f2e-8643-11ef-0a80-17800016782e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=cb80657e-8643-11ef-0a80-17800016782c"
+        }
+    },
+    {
+        "id": "cc238677-0261-11f1-0a80-032c000499e3",
+        "name": "Лента атласная 45 счастливых лет 10*180 см",
+        "article": "60427",
+        "current_code": "169778782223087",
+        "folder_found": "Код",
+        "new_code": "60427",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/cc238677-0261-11f1-0a80-032c000499e3",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=cc237de4-0261-11f1-0a80-032c000499e0"
+        }
+    },
+    {
+        "id": "cc406133-8644-11ef-0a80-17800017263d",
+        "name": "Значок \"С днем варенья \"4,5см",
+        "article": "1212435",
+        "current_code": "505251",
+        "folder_found": "Код",
+        "new_code": "1212435",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/cc406133-8644-11ef-0a80-17800017263d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=cc405717-8644-11ef-0a80-17800017263b"
+        }
+    },
+    {
+        "id": "cdd612dc-00c9-11f1-0a80-097600047983",
+        "name": "Медаль-магнит \"Лучший воспитатель дет. сада\" 8,5*9,2см.",
+        "article": "163084",
+        "current_code": "169778782222976",
+        "folder_found": "Код",
+        "new_code": "163084",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/cdd612dc-00c9-11f1-0a80-097600047983",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=cdd603c2-00c9-11f1-0a80-097600047980"
+        }
+    },
+    {
+        "id": "ce536781-01c3-11f1-0a80-1c30000dc140",
+        "name": "Монета счастливая \"Купи две, нужно экономить\" 3,2см.",
+        "article": "711692",
+        "current_code": "169778782223061",
+        "folder_found": "Код",
+        "new_code": "711692",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/ce536781-01c3-11f1-0a80-1c30000dc140",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=ce535c9c-01c3-11f1-0a80-1c30000dc13d"
+        }
+    },
+    {
+        "id": "d0f6972d-f845-11f0-0a80-03f4000b2a64",
+        "name": "Подставка пасхальная на 1 яйцо \"Гжель\" 15,7*21,2см.",
+        "article": "1695094",
+        "current_code": "169778782222729",
+        "folder_found": "Код",
+        "new_code": "1695094",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d0f6972d-f845-11f0-0a80-03f4000b2a64",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d0f686ce-f845-11f0-0a80-03f4000b2a61"
+        }
+    },
+    {
+        "id": "d134aed3-8643-11ef-0a80-178000167c36",
+        "name": "Лента атласная Мой мальчишник 10*180 см",
+        "article": "48319",
+        "current_code": "511309",
+        "folder_found": "Код",
+        "new_code": "48319",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d134aed3-8643-11ef-0a80-178000167c36",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d134a65e-8643-11ef-0a80-178000167c34"
+        }
+    },
+    {
+        "id": "d18e5cad-8645-11ef-0a80-17800017f921",
+        "name": "Медаль картон \"Выпускник начальной школы\" 9см.",
+        "article": "1500712",
+        "current_code": "505171",
+        "folder_found": "Код",
+        "new_code": "1500712",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d18e5cad-8645-11ef-0a80-17800017f921",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d18e559f-8645-11ef-0a80-17800017f91f"
+        }
+    },
+    {
+        "id": "d1975a8e-8643-11ef-0a80-178000167c7c",
+        "name": "Лента атласная Очаровательная свидетельница 10*190 см",
+        "article": "188563",
+        "current_code": "511311",
+        "folder_found": "Код",
+        "new_code": "188563",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d1975a8e-8643-11ef-0a80-178000167c7c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d1974fad-8643-11ef-0a80-178000167c7a"
+        }
+    },
+    {
+        "id": "d1d4c0e4-0260-11f1-0a80-0fdc00049cda",
+        "name": "Лента атласная Лучшая в мире бабушка 10*180 см",
+        "article": "60540",
+        "current_code": "169778782223085",
+        "folder_found": "Код",
+        "new_code": "60540",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d1d4c0e4-0260-11f1-0a80-0fdc00049cda",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d1d4b63a-0260-11f1-0a80-0fdc00049cd7"
+        }
+    },
+    {
+        "id": "d1ed5a27-fb7b-11f0-0a80-1cab000f196e",
+        "name": "Подвески \"Набор Пасхальный -5\" 3шт. 5*3,7см.",
+        "article": "1828104",
+        "current_code": "169778782222775",
+        "folder_found": "Код",
+        "new_code": "1828104",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d1ed5a27-fb7b-11f0-0a80-1cab000f196e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d1ed4f1c-fb7b-11f0-0a80-1cab000f196b"
+        }
+    },
+    {
+        "id": "d2b840bd-fc2a-11f0-0a80-0528001f5d55",
+        "name": "Коробочка под яйцо 987 7*7см.",
+        "article": "1746987",
+        "current_code": "169778782222814",
+        "folder_found": "Код",
+        "new_code": "1746987",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d2b840bd-fc2a-11f0-0a80-0528001f5d55",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d2b835ed-fc2a-11f0-0a80-0528001f5d52"
+        }
+    },
+    {
+        "id": "d447fcbf-8643-11ef-0a80-178000167e54",
+        "name": "Салфетка на стол Пасха хохлома 40*25см.",
+        "article": "4774539",
+        "current_code": "513803",
+        "folder_found": "Код",
+        "new_code": "4774539",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d447fcbf-8643-11ef-0a80-178000167e54",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d447f489-8643-11ef-0a80-178000167e52"
+        }
+    },
+    {
+        "id": "d4a03798-8643-11ef-0a80-178000167e9f",
+        "name": "Лента атласная Подруга невесты,друг жениха 10*180 см 2 шт",
+        "article": "47169",
+        "current_code": "511312",
+        "folder_found": "Код",
+        "new_code": "47169",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/d4a03798-8643-11ef-0a80-178000167e9f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=d4a03014-8643-11ef-0a80-178000167e9d"
+        }
+    },
+    {
+        "id": "dae10315-8643-11ef-0a80-178000168407",
+        "name": "Пакет подарочный №672 \"Пасха\" 11х14х5см.",
+        "article": "1204672",
+        "current_code": "506365",
+        "folder_found": "Код",
+        "new_code": "1204672",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/dae10315-8643-11ef-0a80-178000168407",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=dae0fa81-8643-11ef-0a80-178000168405"
+        }
+    },
+    {
+        "id": "ddbaa04f-00f0-11f1-0a80-0fd4000d6b8c",
+        "name": "Лента нагрудная \"Драгоценная свекровь\" 15см.",
+        "article": "583609",
+        "current_code": "169778782223004",
+        "folder_found": "Код",
+        "new_code": "583609",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/ddbaa04f-00f0-11f1-0a80-0fd4000d6b8c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=ddba96b7-00f0-11f1-0a80-0fd4000d6b89"
+        }
+    },
+    {
+        "id": "ddbb60fc-8643-11ef-0a80-178000168646",
+        "name": "Значок \"Самая юнная гостья\" 4,5см.",
+        "article": "1212450",
+        "current_code": "505256",
+        "folder_found": "Код",
+        "new_code": "1212450",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/ddbb60fc-8643-11ef-0a80-178000168646",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=ddbb58e9-8643-11ef-0a80-178000168644"
+        }
+    },
+    {
+        "id": "dde9d04f-fc31-11f0-0a80-00b0001f372b",
+        "name": "Пакет подарочный №674 \"Пасха\" 11х14х5см.",
+        "article": "1204674",
+        "current_code": "169778782222829",
+        "folder_found": "Код",
+        "new_code": "1204674",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/dde9d04f-fc31-11f0-0a80-00b0001f372b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=dde9c57a-fc31-11f0-0a80-00b0001f3728"
+        }
+    },
+    {
+        "id": "e04d569a-8643-11ef-0a80-17800016894e",
+        "name": "Пакет ламинированный №346 «Пасха» 12×15×5,5см.",
+        "article": "3681346",
+        "current_code": "506366",
+        "folder_found": "Код",
+        "new_code": "3681346",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/e04d569a-8643-11ef-0a80-17800016894e",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=e04d4f0e-8643-11ef-0a80-17800016894c"
+        }
+    },
+    {
+        "id": "e1dbbb0b-00f5-11f1-0a80-00c500100496",
+        "name": "Медаль на ленте \"лучший свёкр\" 5,5см.",
+        "article": "53229",
+        "current_code": "169778782223014",
+        "folder_found": "Код",
+        "new_code": "53229",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/e1dbbb0b-00f5-11f1-0a80-00c500100496",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=e1dbb253-00f5-11f1-0a80-00c500100493"
+        }
+    },
+    {
+        "id": "e211b0f2-8644-11ef-0a80-178000173364",
+        "name": "Значок \"Россия вперёд\" 2*2см.",
+        "article": "1224475",
+        "current_code": "505258",
+        "folder_found": "Код",
+        "new_code": "1224475",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/e211b0f2-8644-11ef-0a80-178000173364",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=e211a5f3-8644-11ef-0a80-178000173362"
+        }
+    },
+    {
+        "id": "e3d465e4-0270-11f1-0a80-025a000827b8",
+        "name": "Диплом фоторамка Я первоклассница 24*15см",
+        "article": "1371900",
+        "current_code": "169778782223098",
+        "folder_found": "Код",
+        "new_code": "1371900",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/e3d465e4-0270-11f1-0a80-025a000827b8",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=e3d45b03-0270-11f1-0a80-025a000827b5"
+        }
+    },
+    {
+        "id": "e4aea9f7-00f1-11f1-0a80-15790010196f",
+        "name": "Лента нагрудная \"Сват\" 15см.",
+        "article": "583607",
+        "current_code": "169778782223008",
+        "folder_found": "Код",
+        "new_code": "583607",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/e4aea9f7-00f1-11f1-0a80-15790010196f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=e4ae9a03-00f1-11f1-0a80-15790010196c"
+        }
+    },
+    {
+        "id": "e650f3c0-f83e-11f0-0a80-17ee0009e62f",
+        "name": "Открытка № 358 мини \"ХВ\" 7х7см.",
+        "article": "1987358",
+        "current_code": "169778782222718",
+        "folder_found": "Код",
+        "new_code": "1987358",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/e650f3c0-f83e-11f0-0a80-17ee0009e62f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=e650e9a7-f83e-11f0-0a80-17ee0009e62c"
+        }
+    },
+    {
+        "id": "e78c9963-fc32-11f0-0a80-1cab001ff639",
+        "name": "Пакет подарочный №262 \"Пасха\" 11х14х5см.",
+        "article": "1620262",
+        "current_code": "169778782222834",
+        "folder_found": "Код",
+        "new_code": "1620262",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/e78c9963-fc32-11f0-0a80-1cab001ff639",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=e78c9031-fc32-11f0-0a80-1cab001ff636"
+        }
+    },
+    {
+        "id": "e9ea05c8-fc0d-11f0-0a80-096b0017f3af",
+        "name": "Тарелка сувенирная \"Жостово\" 20см.",
+        "article": "2875363",
+        "current_code": "169778782222797",
+        "folder_found": "Код",
+        "new_code": "2875363",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/e9ea05c8-fc0d-11f0-0a80-096b0017f3af",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=e9e9f7b5-fc0d-11f0-0a80-096b0017f3ac"
+        }
+    },
+    {
+        "id": "eb106857-8644-11ef-0a80-1780001741e2",
+        "name": "Орден \"Чемпион по тостам\" красный 7,5*12,5см.",
+        "article": "479006",
+        "current_code": "505263",
+        "folder_found": "Код",
+        "new_code": "479006",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/eb106857-8644-11ef-0a80-1780001741e2",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=eb106074-8644-11ef-0a80-1780001741e0"
+        }
+    },
+    {
+        "id": "ed09925d-f842-11f0-0a80-1508000a4019",
+        "name": "Открытка № 528 мини \"ХВ\" 10х7см.",
+        "article": "2889528",
+        "current_code": "169778782222724",
+        "folder_found": "Код",
+        "new_code": "2889528",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/ed09925d-f842-11f0-0a80-1508000a4019",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=ed09855b-f842-11f0-0a80-1508000a4016"
+        }
+    },
+    {
+        "id": "edc97356-0252-11f1-0a80-1957000274fa",
+        "name": "Лента аласная Свидетель 10*190 см",
+        "article": "187390",
+        "current_code": "169778782223076",
+        "folder_found": "Код",
+        "new_code": "187390",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/edc97356-0252-11f1-0a80-1957000274fa",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=edc965b5-0252-11f1-0a80-1957000274f7"
+        }
+    },
+    {
+        "id": "ef9228f8-8643-11ef-0a80-1780001695f9",
+        "name": "Монета в открытке \"Малышу на счастье\" 2,2см.",
+        "article": "3516451",
+        "current_code": "506025",
+        "folder_found": "Код",
+        "new_code": "3516451",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/ef9228f8-8643-11ef-0a80-1780001695f9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=ef9221ec-8643-11ef-0a80-1780001695f7"
+        }
+    },
+    {
+        "id": "f0f30ad6-00c7-11f1-0a80-194a000471bf",
+        "name": "Медаль-магнит \"Выпускник детского сада\" Паравозик 8,5*9,2см.",
+        "article": "2798166",
+        "current_code": "169778782222974",
+        "folder_found": "Код",
+        "new_code": "2798166",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f0f30ad6-00c7-11f1-0a80-194a000471bf",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f0f2fe21-00c7-11f1-0a80-194a000471bc"
+        }
+    },
+    {
+        "id": "f22edd4a-8644-11ef-0a80-1780001745ff",
+        "name": "Монета в открытке \"Выбор\" 2,2см.",
+        "article": "3546048",
+        "current_code": "506026",
+        "folder_found": "Код",
+        "new_code": "3546048",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f22edd4a-8644-11ef-0a80-1780001745ff",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f22ed1c6-8644-11ef-0a80-1780001745fd"
+        }
+    },
+    {
+        "id": "f23b06f0-fb70-11f0-0a80-0c68000d076d",
+        "name": "Пасхальный набор №1 для украшения кулича 12*16*1см.",
+        "article": "4491352",
+        "current_code": "169778782222771",
+        "folder_found": "Код",
+        "new_code": "4491352",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f23b06f0-fb70-11f0-0a80-0c68000d076d",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f23b00e5-fb70-11f0-0a80-0c68000d076a"
+        }
+    },
+    {
+        "id": "f3fa3228-8643-11ef-0a80-178000169b9b",
+        "name": "Набор значков \"Лучшая тёща, замечательный тесть\" 5,5см.",
+        "article": "18889511",
+        "current_code": "505173",
+        "folder_found": "Код",
+        "new_code": "18889511",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f3fa3228-8643-11ef-0a80-178000169b9b",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f3fa2a96-8643-11ef-0a80-178000169b99"
+        }
+    },
+    {
+        "id": "f442ce54-002b-11f1-0a80-16530034f496",
+        "name": "Гирлянда на ленте \"Успехов вам, выпускники\" 200 см.",
+        "article": "1794760",
+        "current_code": "169778782222967",
+        "folder_found": "Код",
+        "new_code": "1794760",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f442ce54-002b-11f1-0a80-16530034f496",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f442c714-002b-11f1-0a80-16530034f493"
+        }
+    },
+    {
+        "id": "f4cfc44e-00de-11f1-0a80-0634000b4def",
+        "name": "Медаль на ленте \"Выпускница детского сада\" 7,6 см.",
+        "article": "2765467",
+        "current_code": "169778782222984",
+        "folder_found": "Код",
+        "new_code": "2765467",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f4cfc44e-00de-11f1-0a80-0634000b4def",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f4cfbc77-00de-11f1-0a80-0634000b4dec"
+        }
+    },
+    {
+        "id": "f50a42c0-fb7b-11f0-0a80-1cab000f204c",
+        "name": "Подвески \"Набор Пасхальный -6\" 3шт. 5*3,7см.",
+        "article": "1828105",
+        "current_code": "169778782222776",
+        "folder_found": "Код",
+        "new_code": "1828105",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f50a42c0-fb7b-11f0-0a80-1cab000f204c",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f50a30bf-fb7b-11f0-0a80-1cab000f2049"
+        }
+    },
+    {
+        "id": "f6fa2f0d-8644-11ef-0a80-178000174884",
+        "name": "Гирлянда на ленте \"До свидания, садик\" 200 см.",
+        "article": "1794759",
+        "current_code": "510246",
+        "folder_found": "Код",
+        "new_code": "1794759",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f6fa2f0d-8644-11ef-0a80-178000174884",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f6fa2226-8644-11ef-0a80-178000174882"
+        }
+    },
+    {
+        "id": "f86ed99e-8643-11ef-0a80-178000169ed4",
+        "name": "Талисман \"Ангел Хранитель малыша\" дерево 3*6см.",
+        "article": "2605123",
+        "current_code": "506391",
+        "folder_found": "Код",
+        "new_code": "2605123",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f86ed99e-8643-11ef-0a80-178000169ed4",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f86ed002-8643-11ef-0a80-178000169ed2"
+        }
+    },
+    {
+        "id": "f959ccbb-00d7-11f1-0a80-0c7100092ae1",
+        "name": "Медаль картон \"Свекровь\" 11*8см.",
+        "article": "29909",
+        "current_code": "169778782222981",
+        "folder_found": "Код",
+        "new_code": "29909",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/f959ccbb-00d7-11f1-0a80-0c7100092ae1",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=f959c513-00d7-11f1-0a80-0c7100092ade"
+        }
+    },
+    {
+        "id": "fa0f87db-8643-11ef-0a80-17800016a03f",
+        "name": "Подвески \"Набор Пасхальный -1\" 3шт. 5*3,7см.",
+        "article": "1828100",
+        "current_code": "506382",
+        "folder_found": "Код",
+        "new_code": "1828100",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/fa0f87db-8643-11ef-0a80-17800016a03f",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=fa0f8038-8643-11ef-0a80-17800016a03d"
+        }
+    },
+    {
+        "id": "fa2c6d57-8643-11ef-0a80-17800016a058",
+        "name": "Подставка для яйца «Бельё» 50мл.",
+        "article": "4777069",
+        "current_code": "506332",
+        "folder_found": "Код",
+        "new_code": "4777069",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/fa2c6d57-8643-11ef-0a80-17800016a058",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=fa2c6567-8643-11ef-0a80-17800016a056"
+        }
+    },
+    {
+        "id": "fbb91918-8643-11ef-0a80-17800016a148",
+        "name": "Набор брелок + ручка 17*9 см",
+        "article": "2615995",
+        "current_code": "507705",
+        "folder_found": "Код",
+        "new_code": "2615995",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/fbb91918-8643-11ef-0a80-17800016a148",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=fbb90f8c-8643-11ef-0a80-17800016a146"
+        }
+    },
+    {
+        "id": "fd53b1bc-8643-11ef-0a80-17800016a230",
+        "name": "Подставка на 8 яиц \"Пасхальный паттерн\" 21*21см.",
+        "article": "1695097",
+        "current_code": "506375",
+        "folder_found": "Код",
+        "new_code": "1695097",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/fd53b1bc-8643-11ef-0a80-17800016a230",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=fd53a561-8643-11ef-0a80-17800016a22e"
+        }
+    },
+    {
+        "id": "fda96010-fc2e-11f0-0a80-1cab001f0fad",
+        "name": "Пакет подарочный №675 \"Пасха\" 18х23х8см.",
+        "article": "1204675",
+        "current_code": "169778782222818",
+        "folder_found": "Код",
+        "new_code": "1204675",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/fda96010-fc2e-11f0-0a80-1cab001f0fad",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=fda95362-fc2e-11f0-0a80-1cab001f0faa"
+        }
+    },
+    {
+        "id": "fed7feba-01bb-11f1-0a80-04f6000bbdd0",
+        "name": "Монета в открытке \"Лучший водитель\" 2см.",
+        "article": "2765490",
+        "current_code": "169778782223053",
+        "folder_found": "Код",
+        "new_code": "2765490",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/fed7feba-01bb-11f1-0a80-04f6000bbdd0",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=fed7f40e-01bb-11f1-0a80-04f6000bbdcd"
+        }
+    },
+    {
+        "id": "ff1769ed-8644-11ef-0a80-178000174ca9",
+        "name": "Лента атласная Чемпион 10*180 см",
+        "article": "4371948",
+        "current_code": "511324",
+        "folder_found": "Код",
+        "new_code": "4371948",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/ff1769ed-8644-11ef-0a80-178000174ca9",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=ff176159-8644-11ef-0a80-178000174ca7"
+        }
+    },
+    {
+        "id": "ff95744e-8643-11ef-0a80-17800016a384",
+        "name": "Набор для создания корзинки \"С Пасхой\" 3+",
+        "article": "1526563",
+        "current_code": "506383",
+        "folder_found": "Код",
+        "new_code": "1526563",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/ff95744e-8643-11ef-0a80-17800016a384",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=ff956a19-8643-11ef-0a80-17800016a382"
+        }
+    },
+    {
+        "id": "ffcb5fa7-8643-11ef-0a80-17800016a3a2",
+        "name": "Фреска с блестками и фольгой \"Цыплёнок в яйце\"",
+        "article": "1526576",
+        "current_code": "506384",
+        "folder_found": "Код",
+        "new_code": "1526576",
+        "meta": {
+            "href": "https://api.moysklad.ru/api/remap/1.2/entity/product/ffcb5fa7-8643-11ef-0a80-17800016a3a2",
+            "metadataHref": "https://api.moysklad.ru/api/remap/1.2/entity/product/metadata",
+            "type": "product",
+            "mediaType": "application/json",
+            "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=ffcb54c8-8643-11ef-0a80-17800016a3a0"
+        }
+    }
+]
