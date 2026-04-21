@@ -34,6 +34,9 @@ STOCK_EXTERNAL_CODE = os.getenv('STOCK_ID', 'V2M50lgsggOhAsUxFXeMK3')
 # ID типа цены "Каспи"
 KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', 'fc15ca1c-d188-4088-87b1-44a749aece17')
 
+# Логируем используемый ID цены Каспи для диагностики
+logging.info(f"Используется ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
+
 app = Flask(__name__)
 
 # Control queue for commands from external GUI (thread-safe)
@@ -309,6 +312,9 @@ async def generate_xml(products):
 
     products_in_xml = 0
     products_with_zero_stock = 0
+    products_with_stock = 0
+    products_with_price = 0
+    products_with_both = 0
 
     for p in products:
         product_id = p.get("id")
@@ -359,6 +365,8 @@ async def generate_xml(products):
             logging.debug(f"Продукт {p.get('name', 'Unknown')} (ID: {product_id}) имеет нулевой остаток, пропускаем.")
             continue
 
+        products_with_stock += 1
+
         # Используем только код (code) в качестве SKU, как указано пользователем
         product_sku = p.get("code") or str(p["id"])
         offer = ET.SubElement(offers, "offer", sku=product_sku)
@@ -382,6 +390,8 @@ async def generate_xml(products):
             if entity_type == "bundle":
                 logging.warning(f"Комплект {p.get('name')} имеет 0 цен. Доступные типы цен: {[p.get('priceType', {}).get('name') for p in sale_prices]}")
         else:
+            products_with_price += 1
+            products_with_both += 1
             if entity_type == "bundle":
                 logging.info(f"Комплект {p.get('name')} (ID: {product_id}) имеет цену {price} и будет включен в XML")
 
@@ -408,7 +418,24 @@ async def generate_xml(products):
     
     global last_generated_time
     last_generated_time = datetime.datetime.now()
-    logging.info(f"XML успешно сгенерирован в {full_xml_path}. Добавлено {products_in_xml} товаров. Пропущено {products_with_zero_stock} товаров с нулевым остатком.")
+    logging.info(f"XML успешно сгенерирован в {full_xml_path}.")
+    logging.info(f"=== СТАТИСТИКА ВЫГРУЗКИ ===")
+    logging.info(f"Всего позиций выгружено из МойСклад: {len(products)}")
+    logging.info(f"Позиций с остатками > 0: {products_with_stock}")
+    logging.info(f"Позиций с ценой Каспи > 0: {products_with_price}")
+    logging.info(f"Позиций с остатками И ценой > 0: {products_with_both}")
+    logging.info(f"Добавлено в XML: {products_in_xml} товаров")
+    logging.info(f"Пропущено с нулевым остатком: {products_with_zero_stock} товаров")
+    logging.info(f"========================")
+    # Вывод статистики в консоль для GitHub Actions
+    print(f"[{datetime.datetime.now().isoformat()}] === СТАТИСТИКА ВЫГРУЗКИ ===")
+    print(f"[{datetime.datetime.now().isoformat()}] Всего позиций выгружено из МойСклад: {len(products)}")
+    print(f"[{datetime.datetime.now().isoformat()}] Позиций с остатками > 0: {products_with_stock}")
+    print(f"[{datetime.datetime.now().isoformat()}] Позиций с ценой Каспи > 0: {products_with_price}")
+    print(f"[{datetime.datetime.now().isoformat()}] Позиций с остатками И ценой > 0: {products_with_both}")
+    print(f"[{datetime.datetime.now().isoformat()}] Добавлено в XML: {products_in_xml} товаров")
+    print(f"[{datetime.datetime.now().isoformat()}] Пропущено с нулевым остатком: {products_with_zero_stock} товаров")
+    print(f"[{datetime.datetime.now().isoformat()}] ========================")
     return True
 
 async def update_xml():
