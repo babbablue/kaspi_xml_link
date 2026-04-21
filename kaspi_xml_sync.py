@@ -32,7 +32,7 @@ ATTRIBUTE_ID = os.getenv('ATTRIBUTE_ID', '14858c5a-ccb7-11ef-0a80-08a200511bcd')
 # Внешний код склада для остатков
 STOCK_EXTERNAL_CODE = os.getenv('STOCK_ID', 'V2M50lgsggOhAsUxFXeMK3')
 # ID типа цены "Каспи"
-KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', 'fc15ca1c-d188-4088-87b1-44a749aece17')
+KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', '9fd68e0e-ca75-11ef-0a80-0c7900359c7d')
 
 # Логируем используемый ID цены Каспи для диагностики
 logging.info(f"Используется ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
