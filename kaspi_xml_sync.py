@@ -31,7 +31,7 @@ PASSWORD = os.getenv('MS_PASSWORD') or os.getenv('PASSWORD')
 ATTRIBUTE_ID = os.getenv('ATTRIBUTE_ID', '14858c5a-ccb7-11ef-0a80-08a200511bcd')
 # Внешний код склада для остатков
 STOCK_EXTERNAL_CODE = os.getenv('STOCK_ID', 'V2M50lgsggOhAsUxFXeMK3')
-# ID типа цены "Каспи"
+# ID типа цены "Каспи" !!! не совпадает с внешним кодом из МС, его нужно брать из API
 KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', '9fd68e0e-ca75-11ef-0a80-0c7900359c7d')
 
 # Логируем используемый ID цены Каспи для диагностики
@@ -316,13 +316,15 @@ async def generate_xml(products):
     products_with_stock = 0
     products_with_price = 0
     products_with_both = 0
+    bundles_in_xml = 0
+    bundles_with_calculated_price = 0
 
-    # Логируем информацию о ценах для первых 10 товаров для диагностики
-    logging.info(f"=== ДИАГНОСТИКА ЦЕН (первые 10 товаров) ===")
+    # Логируем информацию о ценах для первых 3 товаров для диагностики
+    logging.info(f"=== ДИАГНОСТИКА ЦЕН (первые 3 товаров) ===")
     logging.info(f"Используемый ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
-    print(f"[{datetime.datetime.now().isoformat()}] === ДИАГНОСТИКА ЦЕН (первые 10 товаров) ===")
+    print(f"[{datetime.datetime.now().isoformat()}] === ДИАГНОСТИКА ЦЕН (первые 3 товаров) ===")
     print(f"[{datetime.datetime.now().isoformat()}] Используемый ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
-    for idx, p in enumerate(products[:10]):
+    for idx, p in enumerate(products[:3]):
         sale_prices = p.get('salePrices', [])
         price_info_list = []
         for sp in sale_prices:
@@ -334,6 +336,29 @@ async def generate_xml(products):
         print(f"[{datetime.datetime.now().isoformat()}]   Доступные цены: {price_info_list if price_info_list else 'Нет цен'}")
     logging.info(f"==============================================")
     print(f"[{datetime.datetime.now().isoformat()}] ==============================================")
+
+    # Диагностика цен для комплектов
+    bundles = [p for p in products if p.get('meta', {}).get('type') == 'bundle']
+    if bundles:
+        logging.info(f"=== ДИАГНОСТИКА ЦЕН КОМПЛЕКТОВ (первые 3) ===")
+        logging.info(f"Всего комплектов: {len(bundles)}")
+        print(f"[{datetime.datetime.now().isoformat()}] === ДИАГНОСТИКА ЦЕН КОМПЛЕКТОВ (первые 10) ===")
+        print(f"[{datetime.datetime.now().isoformat()}] Всего комплектов: {len(bundles)}")
+        for idx, p in enumerate(bundles[:3]):
+            sale_prices = p.get('salePrices', [])
+            price_info_list = []
+            for sp in sale_prices:
+                pt = sp.get('priceType', {})
+                price_info_list.append(f"ID: {pt.get('id')}, Name: {pt.get('name')}, Value: {sp.get('value')}")
+            logging.info(f"Комплект {idx+1}: {p.get('name')} (артикул: {p.get('code')})")
+            logging.info(f"  Доступные цены: {price_info_list if price_info_list else 'Нет цен'}")
+            print(f"[{datetime.datetime.now().isoformat()}] Комплект {idx+1}: {p.get('name')} (артикул: {p.get('code')})")
+            print(f"[{datetime.datetime.now().isoformat()}]   Доступные цены: {price_info_list if price_info_list else 'Нет цен'}")
+        logging.info(f"==============================================")
+        print(f"[{datetime.datetime.now().isoformat()}] ==============================================")
+    else:
+        logging.info("Комплекты не найдены")
+        print(f"[{datetime.datetime.now().isoformat()}] Комплекты не найдены")
 
     for p in products:
         product_id = p.get("id")
@@ -402,7 +427,39 @@ async def generate_xml(products):
                 price = int(price_info.get('value', 0) / 100)  # Переводим копейки в рубли
                 logging.info(f"Найдена цена Каспи для {entity_type} {p.get('name')}: {price}")
                 break
-        
+
+        # Если у комплекта цена Каспи = 0, рассчитываем как сумму цен компонентов
+        if price == 0 and entity_type == "bundle":
+            components_block = p.get("components") or []
+            if isinstance(components_block, dict):
+                raw_components = components_block.get("rows") or []
+            elif isinstance(components_block, list):
+                raw_components = components_block
+            else:
+                raw_components = []
+
+            calculated_price = 0
+            for comp in raw_components:
+                if not isinstance(comp, dict):
+                    continue
+                assortment = comp.get('assortment')
+                if not assortment or not isinstance(assortment, dict):
+                    continue
+                quantity = comp.get('quantity', 1) if isinstance(comp, dict) else 1
+                comp_prices = assortment.get('salePrices', [])
+                comp_price = 0
+                for cp in comp_prices:
+                    cpt = cp.get('priceType', {})
+                    if cpt.get('id') == KASPI_PRICE_TYPE_ID:
+                        comp_price = int(cp.get('value', 0) / 100)  # Переводим копейки в рубли
+                        break
+                calculated_price += comp_price * quantity
+
+            if calculated_price > 0:
+                price = calculated_price
+                bundles_with_calculated_price += 1
+                logging.info(f"Цена комплекта {p.get('name')} рассчитана как сумма компонентов: {price}")
+
         if price == 0:
             logging.warning(f"Не найдено цен для товара {p.get('name')} (артикул: {p.get('code')}) - тип: {entity_type}")
             # Дополнительное логирование для комплектов
@@ -412,11 +469,12 @@ async def generate_xml(products):
             products_with_price += 1
             products_with_both += 1
             if entity_type == "bundle":
+                bundles_in_xml += 1
                 logging.info(f"Комплект {p.get('name')} (ID: {product_id}) имеет цену {price} и будет включен в XML")
 
         availabilities = ET.SubElement(offer, "availabilities")
         ET.SubElement(availabilities, "availability", available="yes", storeId="PP1", stockCount=str(stock_count))
-        ET.SubElement(offer, "price").text = str(price)
+        ET.SubElement(offer, "price").text = str(int(price))
         products_in_xml += 1
 
     if products_in_xml == 0:
@@ -445,6 +503,8 @@ async def generate_xml(products):
     logging.info(f"Позиций с остатками И ценой > 0: {products_with_both}")
     logging.info(f"Добавлено в XML: {products_in_xml} товаров")
     logging.info(f"Пропущено с нулевым остатком: {products_with_zero_stock} товаров")
+    logging.info(f"Комплектов в XML: {bundles_in_xml}")
+    logging.info(f"Комплектов с рассчитанной ценой: {bundles_with_calculated_price}")
     logging.info(f"========================")
     # Вывод статистики в консоль для GitHub Actions
     print(f"[{datetime.datetime.now().isoformat()}] === СТАТИСТИКА ВЫГРУЗКИ ===")
@@ -454,6 +514,8 @@ async def generate_xml(products):
     print(f"[{datetime.datetime.now().isoformat()}] Позиций с остатками И ценой > 0: {products_with_both}")
     print(f"[{datetime.datetime.now().isoformat()}] Добавлено в XML: {products_in_xml} товаров")
     print(f"[{datetime.datetime.now().isoformat()}] Пропущено с нулевым остатком: {products_with_zero_stock} товаров")
+    print(f"[{datetime.datetime.now().isoformat()}] Комплектов в XML: {bundles_in_xml}")
+    print(f"[{datetime.datetime.now().isoformat()}] Комплектов с рассчитанной ценой: {bundles_with_calculated_price}")
     print(f"[{datetime.datetime.now().isoformat()}] ========================")
     return True
 
