@@ -316,6 +316,19 @@ async def generate_xml(products):
     products_with_price = 0
     products_with_both = 0
 
+    # Логируем информацию о ценах для первых 10 товаров для диагностики
+    logging.info(f"=== ДИАГНОСТИКА ЦЕН (первые 10 товаров) ===")
+    logging.info(f"Используемый ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
+    for idx, p in enumerate(products[:10]):
+        sale_prices = p.get('salePrices', [])
+        price_info_list = []
+        for sp in sale_prices:
+            pt = sp.get('priceType', {})
+            price_info_list.append(f"ID: {pt.get('id')}, Name: {pt.get('name')}, Value: {sp.get('value')}")
+        logging.info(f"Товар {idx+1}: {p.get('name')} (артикул: {p.get('code')})")
+        logging.info(f"  Доступные цены: {price_info_list if price_info_list else 'Нет цен'}")
+    logging.info(f"==============================================")
+
     for p in products:
         product_id = p.get("id")
         meta = p.get("meta", {})
