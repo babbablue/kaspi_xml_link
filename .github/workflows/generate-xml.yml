@@ -29,7 +29,7 @@ jobs:
           MS_PASSWORD: ${{ secrets.MS_PASSWORD }}
           ATTRIBUTE_ID: ${{ secrets.ATTRIBUTE_ID }}
           STOCK_EXTERNAL_CODE: ${{ secrets.STOCK_EXTERNAL_CODE }}
-          PRICE_ATTRIBUTE_ID: ${{ secrets.PRICE_ATTRIBUTE_ID }}
+          KASPI_PRICE_TYPE_ID: ${{ secrets.KASPI_PRICE_TYPE_ID }}
           COMPANY: ${{ secrets.COMPANY }}
           MERCHANT_ID: ${{ secrets.MERCHANT_ID }}
           XML_FILE: ${{ secrets.XML_FILE }}

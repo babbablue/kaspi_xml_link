@@ -32,7 +32,7 @@ ATTRIBUTE_ID = os.getenv('ATTRIBUTE_ID', '14858c5a-ccb7-11ef-0a80-08a200511bcd')
 # Внешний код склада для остатков
 STOCK_EXTERNAL_CODE = os.getenv('STOCK_ID', 'V2M50lgsggOhAsUxFXeMK3')
 # ID типа цены "Каспи"
-KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', '9fd68e0e-ca75-11ef-0a80-0c7900359c7d')
+KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', 'fc15ca1c-d188-4088-87b1-44a749aece17')
 
 app = Flask(__name__)
 
@@ -258,7 +258,11 @@ async def fetch_entity_items(token, entity_type, use_attribute_filter=True):
             else:
                 filtered_rows = [p for p in rows if has_kaspi_attribute(p)]
                 items.extend(filtered_rows)
-                logging.info(f"[{entity_type}] Local filtering kept {len(filtered_rows)} entities.")
+                logging.info(f"[{entity_type}] Local filtering kept {len(filtered_rows)} out of {len(rows)} entities.")
+                # Дополнительное логирование для комплектов
+                if entity_type == "bundle":
+                    for bundle in filtered_rows:
+                        logging.info(f"[{entity_type}] Bundle included: {bundle.get('name', 'Unknown')} (ID: {bundle.get('id')})")
 
             current_url = data.get("meta", {}).get("nextHref")
             current_params = None
@@ -362,27 +366,24 @@ async def generate_xml(products):
         brand_name = p.get("brand", {}).get("name", "Без бренда") if p.get("brand") else "Без бренда"
         ET.SubElement(offer, "brand").text = brand_name
 
-        # Получаем цену Каспи из типов цен
+        # Получаем цену Каспи из типов цен (ТОЛЬКО цена Каспи, без fallback)
         price = 0
         sale_prices = p.get('salePrices', [])
         for price_info in sale_prices:
             price_type = price_info.get('priceType', {})
             if price_type.get('id') == KASPI_PRICE_TYPE_ID:
                 price = int(price_info.get('value', 0) / 100)  # Переводим копейки в рубли
-                logging.debug(f"Найдена цена Каспи для товара {p.get('name')}: {price}")
+                logging.info(f"Найдена цена Каспи для {entity_type} {p.get('name')}: {price}")
                 break
         
-        # Если цена Каспи не найдена, берем первую доступную цену
         if price == 0:
-            for price_info in sale_prices:
-                value = price_info.get('value', 0)
-                if value > 0:
-                    price = int(value / 100)
-                    logging.debug(f"Использована стандартная цена для товара {p.get('name')}: {price}")
-                    break
-        
-        if price == 0:
-            logging.warning(f"Не найдено цен для товара {p.get('name')} (артикул: {p.get('code')})")
+            logging.warning(f"Не найдено цен для товара {p.get('name')} (артикул: {p.get('code')}) - тип: {entity_type}")
+            # Дополнительное логирование для комплектов
+            if entity_type == "bundle":
+                logging.warning(f"Комплект {p.get('name')} имеет 0 цен. Доступные типы цен: {[p.get('priceType', {}).get('name') for p in sale_prices]}")
+        else:
+            if entity_type == "bundle":
+                logging.info(f"Комплект {p.get('name')} (ID: {product_id}) имеет цену {price} и будет включен в XML")
 
         availabilities = ET.SubElement(offer, "availabilities")
         ET.SubElement(availabilities, "availability", available="yes", storeId="PP1", stockCount=str(stock_count))
