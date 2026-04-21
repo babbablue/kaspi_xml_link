@@ -36,6 +36,7 @@ KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', 'fc15ca1c-d188-4088-87b1-
 
 # Логируем используемый ID цены Каспи для диагностики
 logging.info(f"Используется ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
+print(f"[{datetime.datetime.now().isoformat()}] Используется ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
 
 app = Flask(__name__)
 
@@ -319,6 +320,8 @@ async def generate_xml(products):
     # Логируем информацию о ценах для первых 10 товаров для диагностики
     logging.info(f"=== ДИАГНОСТИКА ЦЕН (первые 10 товаров) ===")
     logging.info(f"Используемый ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
+    print(f"[{datetime.datetime.now().isoformat()}] === ДИАГНОСТИКА ЦЕН (первые 10 товаров) ===")
+    print(f"[{datetime.datetime.now().isoformat()}] Используемый ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
     for idx, p in enumerate(products[:10]):
         sale_prices = p.get('salePrices', [])
         price_info_list = []
@@ -327,7 +330,10 @@ async def generate_xml(products):
             price_info_list.append(f"ID: {pt.get('id')}, Name: {pt.get('name')}, Value: {sp.get('value')}")
         logging.info(f"Товар {idx+1}: {p.get('name')} (артикул: {p.get('code')})")
         logging.info(f"  Доступные цены: {price_info_list if price_info_list else 'Нет цен'}")
+        print(f"[{datetime.datetime.now().isoformat()}] Товар {idx+1}: {p.get('name')} (артикул: {p.get('code')})")
+        print(f"[{datetime.datetime.now().isoformat()}]   Доступные цены: {price_info_list if price_info_list else 'Нет цен'}")
     logging.info(f"==============================================")
+    print(f"[{datetime.datetime.now().isoformat()}] ==============================================")
 
     for p in products:
         product_id = p.get("id")
