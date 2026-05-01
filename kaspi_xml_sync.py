@@ -33,6 +33,7 @@ ATTRIBUTE_ID = os.getenv('ATTRIBUTE_ID', '14858c5a-ccb7-11ef-0a80-08a200511bcd')
 STOCK_EXTERNAL_CODE = os.getenv('STOCK_ID', 'V2M50lgsggOhAsUxFXeMK3')
 # ID типа цены "Каспи" !!! не совпадает с внешним кодом из МС, его нужно брать из API
 KASPI_PRICE_TYPE_ID = os.getenv('KASPI_PRICE_TYPE_ID', '9fd68e0e-ca75-11ef-0a80-0c7900359c7d')
+PRICE_RULES_FILE = os.getenv('PRICE_RULES_FILE', 'price_adjustments.json')
 
 # Логируем используемый ID цены Каспи для диагностики
 logging.info(f"Используется ID цены Каспи: {KASPI_PRICE_TYPE_ID}")
@@ -47,6 +48,68 @@ control_queue = queue.Queue()
 last_generated_time = None
 event_loop = None
 current_token = None
+
+DEFAULT_PRICE_RULES = {
+    "exact_price_adjustments": {
+        "1000": {"operation": "add", "value": -1},
+        "3000": {"operation": "add", "value": -1},
+        "5000": {"operation": "add", "value": -1},
+        "10000": {"operation": "add", "value": -1}
+    }
+}
+
+def load_price_rules():
+    """Загружает правила корректировки цен из JSON-файла."""
+    try:
+        with open(PRICE_RULES_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if not isinstance(data, dict):
+                raise ValueError("Корень JSON должен быть объектом")
+            return data
+    except FileNotFoundError:
+        logging.warning(f"Файл правил цен не найден: {PRICE_RULES_FILE}. Используются значения по умолчанию.")
+    except Exception as e:
+        logging.error(f"Ошибка загрузки правил цен из {PRICE_RULES_FILE}: {e}. Используются значения по умолчанию.")
+    return DEFAULT_PRICE_RULES
+
+def apply_price_adjustment(price, price_rules):
+    """
+    Применяет правило к итоговой цене.
+    Используется после окончательного расчета цены товара или комплекта.
+    """
+    if price <= 0:
+        return price
+
+    exact_rules = price_rules.get("exact_price_adjustments", {})
+    rule = exact_rules.get(str(price))
+    if not isinstance(rule, dict):
+        return price
+
+    operation = rule.get("operation")
+    value = rule.get("value", 0)
+
+    try:
+        value = int(value)
+    except (TypeError, ValueError):
+        logging.warning(f"Некорректное значение value в правиле для цены {price}: {value}")
+        return price
+
+    adjusted_price = price
+    if operation == "add":
+        adjusted_price = price + value
+    elif operation == "subtract":
+        adjusted_price = price - value
+    elif operation == "set":
+        adjusted_price = value
+    else:
+        logging.warning(f"Неизвестная операция '{operation}' для цены {price}")
+        return price
+
+    if adjusted_price < 0:
+        logging.warning(f"Скорректированная цена стала отрицательной ({adjusted_price}) для исходной цены {price}. Используем 0.")
+        adjusted_price = 0
+
+    return adjusted_price
 
 def retry_async(retries=2, delay=15):
     def decorator(func):
@@ -294,6 +357,9 @@ async def generate_xml(products):
         logging.warning("Невозможно сгенерировать XML: список продуктов пуст.")
         return False
 
+    price_rules = load_price_rules()
+    logging.info(f"Загружены правила корректировки цен из {PRICE_RULES_FILE}: {price_rules}")
+
     root = ET.Element("kaspi_catalog", xmlns="kaspiShopping", date=datetime.datetime.now().strftime("%Y-%m-%d"))
     root.set("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
     root.set("xsi:schemaLocation", "http://kaspi.kz/kaspishopping.xsd")
@@ -318,6 +384,7 @@ async def generate_xml(products):
     products_with_both = 0
     bundles_in_xml = 0
     bundles_with_calculated_price = 0
+    adjusted_prices_count = 0
 
     # Логируем информацию о ценах для первых 3 товаров для диагностики
     logging.info(f"=== ДИАГНОСТИКА ЦЕН (первые 3 товаров) ===")
@@ -466,6 +533,14 @@ async def generate_xml(products):
             if entity_type == "bundle":
                 logging.warning(f"Комплект {p.get('name')} имеет 0 цен. Доступные типы цен: {[p.get('priceType', {}).get('name') for p in sale_prices]}")
         else:
+            original_price = price
+            price = apply_price_adjustment(price, price_rules)
+            if price != original_price:
+                adjusted_prices_count += 1
+                logging.info(
+                    f"Цена скорректирована для {entity_type} {p.get('name')}: "
+                    f"{original_price} -> {price}"
+                )
             products_with_price += 1
             products_with_both += 1
             if entity_type == "bundle":
@@ -505,6 +580,7 @@ async def generate_xml(products):
     logging.info(f"Пропущено с нулевым остатком: {products_with_zero_stock} товаров")
     logging.info(f"Комплектов в XML: {bundles_in_xml}")
     logging.info(f"Комплектов с рассчитанной ценой: {bundles_with_calculated_price}")
+    logging.info(f"Скорректировано цен по JSON-правилам: {adjusted_prices_count}")
     logging.info(f"========================")
     # Вывод статистики в консоль для GitHub Actions
     print(f"[{datetime.datetime.now().isoformat()}] === СТАТИСТИКА ВЫГРУЗКИ ===")
@@ -516,6 +592,7 @@ async def generate_xml(products):
     print(f"[{datetime.datetime.now().isoformat()}] Пропущено с нулевым остатком: {products_with_zero_stock} товаров")
     print(f"[{datetime.datetime.now().isoformat()}] Комплектов в XML: {bundles_in_xml}")
     print(f"[{datetime.datetime.now().isoformat()}] Комплектов с рассчитанной ценой: {bundles_with_calculated_price}")
+    print(f"[{datetime.datetime.now().isoformat()}] Скорректировано цен по JSON-правилам: {adjusted_prices_count}")
     print(f"[{datetime.datetime.now().isoformat()}] ========================")
     return True
 
